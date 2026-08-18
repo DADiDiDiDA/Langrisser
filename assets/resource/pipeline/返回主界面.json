@@ -1,0 +1,273 @@
+{
+    "$__mpe_config_返回主界面": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1787053650170,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Langrisser\\assets\\resource\\pipeline\\返回主界面.json",
+            "savedViewport": {
+                "x": -23,
+                "y": -60,
+                "zoom": 0.49
+            },
+            "filename": "返回主界面",
+            "version": "v1.7.6"
+        }
+    },
+    "主界面特征1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1179,
+                    85,
+                    100,
+                    463
+                ],
+                "template": [
+                    "秘境标志.png"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1027,
+                "y": -429
+            }
+        }
+    },
+    "主界面特征2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    239,
+                    622,
+                    901,
+                    94
+                ],
+                "template": [
+                    "任务标志.png"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1406,
+                "y": -429
+            }
+        }
+    },
+    "关闭公告栏": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1101,
+                    25,
+                    104,
+                    102
+                ],
+                "template": [
+                    "叉号标志.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1093,
+                "y": 289
+            }
+        }
+    },
+    "已位于主界面任务结束": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1474,
+                "y": 103
+            }
+        }
+    },
+    "左上角返回": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    3,
+                    6,
+                    134,
+                    60
+                ],
+                "template": [
+                    "左上角退出标志.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1064,
+                "y": 731
+            }
+        }
+    },
+    "点击进入游戏": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    551,
+                    621,
+                    188,
+                    40
+                ],
+                "expected": [
+                    "点击开始"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1078,
+                "y": 535
+            }
+        }
+    },
+    "是否位于主界面": {
+        "recognition": {
+            "type": "And",
+            "param": {
+                "all_of": [
+                    "主界面特征1",
+                    "主界面特征2"
+                ]
+            }
+        },
+        "next": [
+            "已位于主界面任务结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1133,
+                "y": 78
+            }
+        }
+    },
+    "返回主界面开始": {
+        "next": [
+            "[JumpBack]返回过头了吗",
+            "是否位于主界面",
+            "[JumpBack]关闭公告栏",
+            "[JumpBack]点击进入游戏",
+            "[JumpBack]左上角返回",
+            "[JumpBack]新建节点1",
+            "[JumpBack]新建节点2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 498,
+                "y": 207
+            }
+        }
+    },
+    "返回过头了吗": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    507,
+                    305,
+                    269,
+                    55
+                ],
+                "expected": [
+                    "退出游戏"
+                ]
+            }
+        },
+        "next": [
+            "取消退出游戏"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1110,
+                "y": -161
+            }
+        }
+    },
+    "新建节点1": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1049,
+                "y": 963
+            }
+        }
+    },
+    "新建节点2": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1029,
+                "y": 1161
+            }
+        }
+    },
+    "按Esc返回主界面": {
+        "action": {
+            "type": "ClickKey",
+            "param": {
+                "key": [
+                    4,
+                    111
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1035,
+                "y": 1620
+            }
+        }
+    },
+    "新建节点4": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1038,
+                "y": 1465
+            }
+        }
+    },
+    "取消退出游戏": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    684,
+                    428,
+                    118,
+                    50
+                ],
+                "expected": [
+                    "确认"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1391,
+                "y": -147
+            }
+        }
+    }
+}

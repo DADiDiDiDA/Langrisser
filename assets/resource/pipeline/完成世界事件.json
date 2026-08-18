@@ -1,0 +1,127 @@
+{
+    "$__mpe_config_完成世界事件": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": -5383,
+                "y": -697,
+                "zoom": 1.14
+            },
+            "filename": "完成世界事件",
+            "version": "v1.7.6"
+        }
+    },
+    "完成世界事件开始": {
+        "next": [
+            "新建节点27"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4124,
+                "y": 749
+            }
+        }
+    },
+    "新建节点27": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1174,
+                    96,
+                    102,
+                    455
+                ],
+                "template": [
+                    "事件标志.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "新建节点28"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4487,
+                "y": 748
+            }
+        }
+    },
+    "新建节点28": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1109,
+                    109,
+                    78,
+                    390
+                ],
+                "expected": [
+                    "剩余时间"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    -131,
+                    27,
+                    0,
+                    -1
+                ]
+            }
+        },
+        "next": [
+            "新建节点29"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4802,
+                "y": 735
+            }
+        }
+    },
+    "新建节点29": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    701,
+                    490,
+                    116,
+                    53
+                ],
+                "expected": [
+                    "前往"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "新建节点30"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5128,
+                "y": 720
+            }
+        }
+    },
+    "新建节点30": {
+        "$__mpe_code": {
+            "position": {
+                "x": 5455,
+                "y": 677
+            }
+        }
+    }
+}
