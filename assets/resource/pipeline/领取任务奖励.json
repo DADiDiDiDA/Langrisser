@@ -1,0 +1,174 @@
+{
+    "$__mpe_config_领取任务奖励": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": -8572,
+                "y": 76,
+                "zoom": 0.76
+            },
+            "filename": "领取任务奖励",
+            "version": "v1.7.6"
+        }
+    },
+    "$__mpe_external_返回主界面开始_领取任务奖励": {
+        "$__mpe_code": {
+            "position": {
+                "x": 12750,
+                "y": 113
+            }
+        }
+    },
+    "一键领取奖励-领取任务奖励": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1077,
+                    551,
+                    108,
+                    131
+                ],
+                "template": [
+                    "蓝色一键领取图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12118,
+                "y": 280
+            }
+        }
+    },
+    "无可领取奖励-领取任务奖励": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1067,
+                    551,
+                    123,
+                    138
+                ],
+                "template": [
+                    "灰色一键领取图标.png"
+                ],
+                "threshold": [
+                    0.85
+                ]
+            }
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12094,
+                "y": -97
+            }
+        }
+    },
+    "进入任务界面-领取任务奖励": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    237,
+                    611,
+                    896,
+                    105
+                ],
+                "template": [
+                    "任务标志.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "进入每日任务界面-领取任务奖励",
+            "[JumpBack]进入任务界面-领取任务奖励第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11352,
+                "y": 57
+            }
+        }
+    },
+    "进入每日任务界面-领取任务奖励": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1114,
+                    130,
+                    159,
+                    442
+                ],
+                "expected": [
+                    "每日"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "无可领取奖励-领取任务奖励",
+            "一键领取奖励-领取任务奖励"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11687,
+                "y": 78
+            }
+        }
+    },
+    "领取任务奖励开始": {
+        "next": [
+            "进入任务界面-领取任务奖励"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11014,
+                "y": 59
+            }
+        }
+    },
+    "进入任务界面-领取任务奖励第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    237,
+                    611,
+                    896,
+                    105
+                ],
+                "template": [
+                    "任务标志.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 11644,
+                "y": 429
+            }
+        }
+    }
+}

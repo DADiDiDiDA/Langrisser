@@ -3,27 +3,66 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1787188173738,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Langrisser\\assets\\resource\\pipeline\\领取邮件.json",
             "savedViewport": {
-                "x": -3586,
-                "y": -689,
-                "zoom": 1.14
+                "x": -4630,
+                "y": -744,
+                "zoom": 1.5
             },
             "filename": "领取邮件",
             "version": "v1.7.6"
         }
     },
-    "领取邮件开始": {
-        "next": [
-            "进入邮箱界面"
-        ],
+    "$__mpe_external_返回主界面开始_领取邮件": {
         "$__mpe_code": {
             "position": {
-                "x": 2782,
-                "y": 653
+                "x": 3941,
+                "y": 818
             }
         }
     },
-    "进入邮箱界面": {
+    "开始全部领取邮件-领取邮件": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1169,
+                    561,
+                    107,
+                    133
+                ],
+                "template": [
+                    "蓝色一键领取图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3481,
+                "y": 557
+            }
+        }
+    },
+    "无可领取奖励-领取邮件": {
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3518,
+                "y": 883
+            }
+        }
+    },
+    "进入邮箱界面-领取邮件": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -42,40 +81,24 @@
             "type": "Click"
         },
         "next": [
-            "开始全部领取邮件",
-            "无可领取奖励"
+            "开始全部领取邮件-领取邮件",
+            "无可领取奖励-领取邮件"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3135,
-                "y": 642
+                "x": 3082,
+                "y": 612
             }
         }
     },
-    "开始全部领取邮件": {
-        "$__mpe_code": {
-            "position": {
-                "x": 3481,
-                "y": 557
-            }
-        }
-    },
-    "无可领取奖励": {
+    "领取邮件开始": {
         "next": [
-            "返回主界面开始"
+            "进入邮箱界面-领取邮件"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3518,
-                "y": 883
-            }
-        }
-    },
-    "$__mpe_external_返回主界面开始_领取邮件": {
-        "$__mpe_code": {
-            "position": {
-                "x": 3941,
-                "y": 818
+                "x": 2759,
+                "y": 652
             }
         }
     }

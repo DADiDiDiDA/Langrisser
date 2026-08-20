@@ -3,92 +3,46 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1787186487041,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Langrisser\\assets\\resource\\pipeline\\完成世界事件.json",
             "savedViewport": {
-                "x": -5383,
-                "y": -697,
-                "zoom": 1.14
+                "x": -4158,
+                "y": -507,
+                "zoom": 1
             },
             "filename": "完成世界事件",
             "version": "v1.7.6"
         }
     },
+    "$__mpe_external_关卡内处理开始_完成世界事件": {
+        "$__mpe_code": {
+            "position": {
+                "x": 5430,
+                "y": 824
+            }
+        }
+    },
+    "$__mpe_external_返回主界面开始_完成世界事件": {
+        "$__mpe_code": {
+            "position": {
+                "x": 5303,
+                "y": 1002
+            }
+        }
+    },
     "完成世界事件开始": {
         "next": [
-            "新建节点27"
+            "进入世界事件选择界面"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4124,
-                "y": 749
+                "x": 3856,
+                "y": 675
             }
         }
     },
-    "新建节点27": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    1174,
-                    96,
-                    102,
-                    455
-                ],
-                "template": [
-                    "事件标志.png"
-                ],
-                "green_mask": true
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "新建节点28"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4487,
-                "y": 748
-            }
-        }
-    },
-    "新建节点28": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    1109,
-                    109,
-                    78,
-                    390
-                ],
-                "expected": [
-                    "剩余时间"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target_offset": [
-                    -131,
-                    27,
-                    0,
-                    -1
-                ]
-            }
-        },
-        "next": [
-            "新建节点29"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4802,
-                "y": 735
-            }
-        }
-    },
-    "新建节点29": {
+    "开始进入世界事件关卡": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -107,7 +61,7 @@
             "type": "Click"
         },
         "next": [
-            "新建节点30"
+            "关卡内处理开始"
         ],
         "$__mpe_code": {
             "position": {
@@ -116,11 +70,118 @@
             }
         }
     },
-    "新建节点30": {
+    "无可用的世界事件": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    477,
+                    324,
+                    291,
+                    65
+                ],
+                "expected": [
+                    "没有发现"
+                ]
+            }
+        },
+        "next": [
+            "返回主界面开始"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 5455,
-                "y": 677
+                "x": 4810,
+                "y": 942
+            }
+        }
+    },
+    "进入世界事件选择界面": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1174,
+                    96,
+                    102,
+                    455
+                ],
+                "template": [
+                    "事件标志.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 0,
+        "next": [
+            "选择世界事件",
+            "无可用的世界事件",
+            "[JumpBack]进入世界事件选择界面_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4271,
+                "y": 678
+            }
+        }
+    },
+    "进入世界事件选择界面_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1174,
+                    96,
+                    102,
+                    455
+                ],
+                "template": [
+                    "事件标志.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 0,
+        "$__mpe_code": {
+            "position": {
+                "x": 4617,
+                "y": 1198
+            }
+        }
+    },
+    "选择世界事件": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1062,
+                    104,
+                    128,
+                    492
+                ],
+                "expected": [
+                    "剩余时间",
+                    "消耗"
+                ]
+            }
+        },
+        "pre_wait_freezes": 2000,
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 4000,
+        "next": [
+            "开始进入世界事件关卡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4775,
+                "y": 536
             }
         }
     }

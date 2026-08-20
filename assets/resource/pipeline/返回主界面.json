@@ -3,16 +3,41 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787053650170,
+            "lastSyncTime": 1787186758142,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\Langrisser\\assets\\resource\\pipeline\\返回主界面.json",
             "savedViewport": {
-                "x": -23,
-                "y": -60,
-                "zoom": 0.49
+                "x": -304,
+                "y": -1106,
+                "zoom": 0.87
             },
             "filename": "返回主界面",
             "version": "v1.7.6"
+        }
+    },
+    "版本更新": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    697,
+                    438,
+                    87,
+                    47
+                ],
+                "expected": [
+                    "更新"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1029,
+                "y": 1387
+            }
         }
     },
     "主界面特征1": {
@@ -32,8 +57,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1027,
-                "y": -429
+                "x": 996,
+                "y": -450
             }
         }
     },
@@ -54,194 +79,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1406,
-                "y": -429
-            }
-        }
-    },
-    "关闭公告栏": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    1101,
-                    25,
-                    104,
-                    102
-                ],
-                "template": [
-                    "叉号标志.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 1093,
-                "y": 289
-            }
-        }
-    },
-    "已位于主界面任务结束": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1474,
-                "y": 103
-            }
-        }
-    },
-    "左上角返回": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    3,
-                    6,
-                    134,
-                    60
-                ],
-                "template": [
-                    "左上角退出标志.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 1064,
-                "y": 731
-            }
-        }
-    },
-    "点击进入游戏": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    551,
-                    621,
-                    188,
-                    40
-                ],
-                "expected": [
-                    "点击开始"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 1078,
-                "y": 535
-            }
-        }
-    },
-    "是否位于主界面": {
-        "recognition": {
-            "type": "And",
-            "param": {
-                "all_of": [
-                    "主界面特征1",
-                    "主界面特征2"
-                ]
-            }
-        },
-        "next": [
-            "已位于主界面任务结束"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1133,
-                "y": 78
-            }
-        }
-    },
-    "返回主界面开始": {
-        "next": [
-            "[JumpBack]返回过头了吗",
-            "是否位于主界面",
-            "[JumpBack]关闭公告栏",
-            "[JumpBack]点击进入游戏",
-            "[JumpBack]左上角返回",
-            "[JumpBack]新建节点1",
-            "[JumpBack]新建节点2"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 498,
-                "y": 207
-            }
-        }
-    },
-    "返回过头了吗": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    507,
-                    305,
-                    269,
-                    55
-                ],
-                "expected": [
-                    "退出游戏"
-                ]
-            }
-        },
-        "next": [
-            "取消退出游戏"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1110,
-                "y": -161
-            }
-        }
-    },
-    "新建节点1": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1049,
-                "y": 963
-            }
-        }
-    },
-    "新建节点2": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1029,
-                "y": 1161
-            }
-        }
-    },
-    "按Esc返回主界面": {
-        "action": {
-            "type": "ClickKey",
-            "param": {
-                "key": [
-                    4,
-                    111
-                ]
-            }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 1035,
-                "y": 1620
-            }
-        }
-    },
-    "新建节点4": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1038,
-                "y": 1465
+                "x": 1314,
+                "y": -457
             }
         }
     },
@@ -265,8 +104,230 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1391,
-                "y": -147
+                "x": 1446,
+                "y": -204
+            }
+        }
+    },
+    "右上角叉号": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1022,
+                    2,
+                    256,
+                    150
+                ],
+                "template": [
+                    "叉号标志.png",
+                    "白色叉号.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1500,
+        "$__mpe_code": {
+            "position": {
+                "x": 1101,
+                "y": 31
+            }
+        }
+    },
+    "右下角情况处理": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    960,
+                    611,
+                    319,
+                    105
+                ],
+                "expected": [
+                    "点击屏幕继续"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1500,
+        "$__mpe_code": {
+            "position": {
+                "x": 1029,
+                "y": 1133
+            }
+        }
+    },
+    "左上角返回": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    3,
+                    6,
+                    134,
+                    60
+                ],
+                "template": [
+                    "左上角退出标志.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 1030,
+                "y": 824
+            }
+        }
+    },
+    "左下角取消关卡": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    452,
+                    540,
+                    167,
+                    81
+                ],
+                "template": [
+                    "取消图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1017,
+                "y": 1575
+            }
+        }
+    },
+    "已位于主界面任务结束": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1462,
+                "y": 349
+            }
+        }
+    },
+    "按Esc返回主界面": {
+        "action": {
+            "type": "ClickKey",
+            "param": {
+                "key": [
+                    4,
+                    111
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 984,
+                "y": 1836
+            }
+        }
+    },
+    "是否位于主界面": {
+        "recognition": {
+            "type": "And",
+            "param": {
+                "all_of": [
+                    "主界面特征1",
+                    "主界面特征2"
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "next": [
+            "已位于主界面任务结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1080,
+                "y": 325
+            }
+        }
+    },
+    "点击进入游戏": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    551,
+                    621,
+                    188,
+                    40
+                ],
+                "expected": [
+                    "点击开始"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 1052,
+                "y": 569
+            }
+        }
+    },
+    "返回主界面开始": {
+        "post_delay": 2500,
+        "next": [
+            "[JumpBack]返回过头了吗",
+            "[JumpBack]右上角叉号",
+            "是否位于主界面",
+            "[JumpBack]点击进入游戏",
+            "[JumpBack]左上角返回",
+            "[JumpBack]版本更新",
+            "[JumpBack]右下角情况处理",
+            "[JumpBack]左下角取消关卡",
+            "[JumpBack]按Esc返回主界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 413,
+                "y": 469
+            }
+        }
+    },
+    "返回过头了吗": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    507,
+                    305,
+                    269,
+                    55
+                ],
+                "expected": [
+                    "退出游戏"
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "next": [
+            "取消退出游戏"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1102,
+                "y": -234
             }
         }
     }

@@ -1,33 +1,192 @@
 {
-  "name": "Debug",
-  "version": "1.0",
-  "resource": [
-    {
-      "name": "默认",
-      "path": [
-        "{PROJECT_DIR}/resource/base"
-      ],
-      "DisplayName": "",
-      "DisplayDescription": ""
-    }
-  ],
-  "task": [],
-  "option": {
-    "测试": {
-      "cases": [
+    "interface_version": 2,
+    "name": "Langrisser",
+    "description": "梦幻模拟战自动日常脚本",
+    "license": "MIT",
+    "welcome": "欢迎使用梦幻模拟战自动化脚本！",
+    "version": "0.1.0",
+    "controller": [
         {
-          "name": "测试1",
-          "pipeline_override": {},
-          "DisplayName": "",
-          "DisplayDescription": ""
+            "name": "桌面端",
+            "type": "Win32",
+            "win32": {
+                "class_regex": ".*",
+                "window_regex": "梦幻模拟战",
+                "screencap": "PrintWindow",
+                "mouse": "PostMessageWithCursorPos",
+                "keyboard": "PostMessageWithCursorPos"
+            }
         },
         {
-          "name": "测试2",
-          "pipeline_override": {},
-          "DisplayName": "",
-          "DisplayDescription": ""
+            "name": "安卓端",
+            "type": "Adb",
+            "display_short_side": 720
         }
-      ]
+    ],
+    "resource": [
+        {
+            "name": "官服",
+            "path": ["./resource"]
+        }
+    ],
+    "task": [
+        {
+            "name": "开始游戏",
+            "entry": "返回主界面开始",
+            "default_check": true,
+            "doc": "从任意界面返回游戏主界面"
+        },
+        {
+            "name": "领取邮件",
+            "entry": "领取邮件开始",
+            "default_check": true,
+            "doc": "自动领取邮箱中的所有邮件"
+        },
+        {
+            "name": "友情点领取",
+            "entry": "友情点领取开始",
+            "default_check": true,
+            "doc": "赠送好友友情点并领取友情点奖励"
+        },
+        {
+            "name": "商店购买",
+            "entry": "商店购买开始",
+            "default_check": true,
+            "doc": "自动购买商店中的友情券"
+        },
+        {
+            "name": "竞技场",
+            "entry": "竞技场开始",
+            "default_check": true,
+            "doc": "执行一次竞技场快速作战挑战"
+        },
+        {
+            "name": "完成世界事件",
+            "entry": "完成世界事件开始",
+            "default_check": true,
+            "doc": "完成当前可用的世界事件"
+        },
+        {
+            "name": "刷体力",
+            "entry": "刷体力开始",
+            "default_check": true,
+            "option": ["刷体力-选择副本类型"],
+            "doc": "刷副本体力，支持扫荡和连续作战"
+        },
+        {
+            "name": "友情池召唤一次",
+            "entry": "友情池召唤一次开始",
+            "default_check": true,
+            "doc": "使用友情券进行一次友情池召唤"
+        },
+        {
+            "name": "领取任务奖励",
+            "entry": "领取任务奖励开始",
+            "default_check": true,
+            "doc": "自动领取每日任务的奖励"
+        }
+    ],
+    "option": {
+        "刷体力-选择副本类型": {
+            "type": "select",
+            "label": "选择副本类型",
+            "default_case": "兄贵健身房",
+            "cases": [
+                {
+                    "name": "兄贵健身房",
+                    "label": "兄贵健身房",
+                    "option": ["刷体力-选择完成方式"],
+                    "pipeline_override": {
+                        "开始选择打什么类型": {
+                            "next": ["兄贵健身房", "[JumpBack]滑动关卡列表"]
+                        }
+                    }
+                },
+                {
+                    "name": "安杰丽卡特训屋",
+                    "label": "安杰丽卡特训屋",
+                    "option": ["刷体力-选择完成方式"],
+                    "pipeline_override": {
+                        "开始选择打什么类型": {
+                            "next": ["安杰丽卡特训屋", "[JumpBack]滑动关卡列表"]
+                        }
+                    }
+                },
+                {
+                    "name": "女神的试炼",
+                    "label": "女神的试炼",
+                    "option": ["刷体力-选择完成方式"],
+                    "pipeline_override": {
+                        "开始选择打什么类型": {
+                            "next": ["女神的试炼", "[JumpBack]滑动关卡列表"]
+                        }
+                    }
+                },
+                {
+                    "name": "羁绊之地",
+                    "label": "羁绊之地",
+                    "option": ["刷体力-选择完成方式"],
+                    "pipeline_override": {
+                        "开始选择打什么类型": {
+                            "next": ["羁绊之地", "[JumpBack]滑动关卡列表"]
+                        }
+                    }
+                },
+                {
+                    "name": "逃跑的宝藏",
+                    "label": "逃跑的宝藏",
+                    "pipeline_override": {
+                        "开始选择打什么类型": {
+                            "next": ["逃跑的宝藏", "[JumpBack]滑动关卡列表"]
+                        }
+                    }
+                }
+            ]
+        },
+        "刷体力-选择完成方式": {
+            "type": "select",
+            "label": "选择完成关卡方式",
+            "default_case": "扫荡",
+            "cases": [
+                {
+                    "name": "扫荡",
+                    "label": "扫荡",
+                    "option": ["刷体力-选择扫荡次数"],
+                    "pipeline_override": {
+                        "开始选择完成关卡方式-四个类型": {
+                            "next": ["选择扫荡方式-前三个类型"]
+                        }
+                    }
+                },
+                {
+                    "name": "连续作战",
+                    "label": "连续作战",
+                    "pipeline_override": {
+                        "开始选择完成关卡方式-四个类型": {
+                            "next": ["选择连续作战方式-前三个类型"]
+                        }
+                    }
+                }
+            ]
+        },
+        "刷体力-选择扫荡次数": {
+            "type": "input",
+            "label": "扫荡次数设置",
+            "description": "请输入想要扫荡的次数",
+            "inputs": [
+                {
+                    "name": "扫荡次数",
+                    "label": "扫荡次数",
+                    "default": "2",
+                    "pipeline_type": "int",
+                    "verify": "^\\d+$"
+                }
+            ],
+            "pipeline_override": {
+                "点击扫荡图标-前三个类型": {
+                    "max_hit": "{扫荡次数}"
+                }
+            }
+        }
     }
-  }
 }

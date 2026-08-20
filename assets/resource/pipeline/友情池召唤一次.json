@@ -1,0 +1,441 @@
+{
+    "$__mpe_config_友情池召唤一次": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": -7561,
+                "y": -586,
+                "zoom": 0.76
+            },
+            "filename": "友情池召唤一次",
+            "version": "v1.7.6"
+        }
+    },
+    "$__mpe_external_返回主界面开始_友情池召唤一次": {
+        "$__mpe_code": {
+            "position": {
+                "x": 13655,
+                "y": 451
+            }
+        }
+    },
+    "友情任务已完成-友情池召唤": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": "寻找友情召唤一次任务-友情池召唤",
+                "roi_offset": [
+                    14,
+                    50,
+                    -121,
+                    -2
+                ],
+                "expected": [
+                    "已完成"
+                ]
+            }
+        },
+        "next": [
+            "友情任务已完成任务结束-友情池召唤"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10752,
+                "y": 932
+            }
+        }
+    },
+    "友情任务已完成任务结束-友情池召唤": {
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11061,
+                "y": 962
+            }
+        }
+    },
+    "友情池召唤一次开始": {
+        "next": [
+            "进入任务界面-友情池召唤"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9570,
+                "y": 1191
+            }
+        }
+    },
+    "向下滑动表-友情池召唤": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    650,
+                    223,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        634,
+                        494,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 12851,
+                "y": 1213
+            }
+        }
+    },
+    "寻找友情卡池-友情池召唤": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1033,
+                    62,
+                    230,
+                    641
+                ],
+                "expected": [
+                    "友情"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "选择友情召唤一次-友情池召唤"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12150,
+                "y": 1104
+            }
+        }
+    },
+    "寻找友情召唤一次任务-友情池召唤": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    202,
+                    70,
+                    304,
+                    649
+                ],
+                "expected": [
+                    "友情"
+                ]
+            }
+        },
+        "post_delay": 1500,
+        "next": [
+            "友情任务已完成-友情池召唤",
+            "退出任务界面-友情池召唤"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10296,
+                "y": 1036
+            }
+        }
+    },
+    "开始进入卡池界面-友情池召唤": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    239,
+                    617,
+                    895,
+                    102
+                ],
+                "template": [
+                    "召唤图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "是否有友情卷-友情池召唤"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11060,
+                "y": 1256
+            }
+        }
+    },
+    "无可用召唤卷-友情池召唤": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    433,
+                    11,
+                    73,
+                    36
+                ],
+                "expected": [
+                    "0"
+                ]
+            }
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11766,
+                "y": 1012
+            }
+        }
+    },
+    "是否有友情卷-友情池召唤": {
+        "next": [
+            "无可用召唤卷-友情池召唤",
+            "有可用召唤卷-友情池召唤"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11363,
+                "y": 1265
+            }
+        }
+    },
+    "有可用召唤卷-友情池召唤": {
+        "next": [
+            "寻找友情卡池-友情池召唤",
+            "[JumpBack]滑动屏幕寻找卡池-友情池召唤"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11712,
+                "y": 1316
+            }
+        }
+    },
+    "滑动任务列表-友情池召唤": {
+        "max_hit": 7,
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    634,
+                    494,
+                    40,
+                    0
+                ],
+                "end": [
+                    [
+                        650,
+                        103,
+                        45,
+                        2
+                    ]
+                ],
+                "duration": [
+                    2000
+                ]
+            }
+        },
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 10328,
+                "y": 1432
+            }
+        }
+    },
+    "滑动屏幕寻找卡池-友情池召唤": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    1148,
+                    667,
+                    19,
+                    15
+                ],
+                "end": [
+                    [
+                        1133,
+                        177,
+                        11,
+                        10
+                    ]
+                ]
+            }
+        },
+        "repeat": 4,
+        "$__mpe_code": {
+            "position": {
+                "x": 12295,
+                "y": 1433
+            }
+        }
+    },
+    "确认召唤奖励-友情池召唤": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    380,
+                    569,
+                    134,
+                    79
+                ],
+                "expected": [
+                    "确定"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 13321,
+                "y": 915
+            }
+        }
+    },
+    "进入任务界面-友情池召唤": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    232,
+                    616,
+                    900,
+                    99
+                ],
+                "template": [
+                    "任务标志.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "寻找友情召唤一次任务-友情池召唤",
+            "[JumpBack]滑动任务列表-友情池召唤",
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9910,
+                "y": 1124
+            }
+        }
+    },
+    "退出任务界面-友情池召唤": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    6,
+                    3,
+                    144,
+                    73
+                ],
+                "template": [
+                    "左上角退出标志.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "开始进入卡池界面-友情池召唤"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10772,
+                "y": 1271
+            }
+        }
+    },
+    "选择友情召唤一次-友情池召唤": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    335,
+                    659,
+                    131,
+                    52
+                ],
+                "expected": [
+                    "友情券"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    -57,
+                    0,
+                    0
+                ]
+            }
+        },
+        "next": [
+            "选择跳过召唤介绍-友情池召唤",
+            "[JumpBack]向下滑动表-友情池召唤"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12541,
+                "y": 1044
+            }
+        }
+    },
+    "选择跳过召唤介绍-友情池召唤": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1146,
+                    7,
+                    128,
+                    60
+                ],
+                "expected": [
+                    "SKIP"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "确认召唤奖励-友情池召唤"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 13017,
+                "y": 939
+            }
+        }
+    }
+}

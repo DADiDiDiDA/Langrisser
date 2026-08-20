@@ -1,0 +1,679 @@
+{
+    "$__mpe_config_刷体力": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": -5464,
+                "y": 771,
+                "zoom": 0.57
+            },
+            "filename": "刷体力",
+            "version": "v1.7.6"
+        }
+    },
+    "$__mpe_external_关卡内处理开始_刷体力": {
+        "$__mpe_code": {
+            "position": {
+                "x": 10695,
+                "y": 138
+            }
+        }
+    },
+    "$__mpe_external_返回主界面开始_刷体力": {
+        "$__mpe_code": {
+            "position": {
+                "x": 12643,
+                "y": -525
+            }
+        }
+    },
+    "兄贵健身房": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    336,
+                    83,
+                    367,
+                    631
+                ],
+                "template": [
+                    "兄贵健身房.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "开始检查是否进入关卡界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8968,
+                "y": -477
+            }
+        }
+    },
+    "刷体力开始": {
+        "next": [
+            "进入秘境界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7036,
+                "y": -2
+            }
+        }
+    },
+    "剩余扫荡次数为0嘛-前三个类型": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    405,
+                    8,
+                    73,
+                    44
+                ],
+                "expected": [
+                    "0"
+                ]
+            }
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10497,
+                "y": -1539
+            }
+        }
+    },
+    "女神的试炼": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    336,
+                    83,
+                    367,
+                    631
+                ],
+                "template": [
+                    "女神的试炼图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "开始检查是否进入关卡界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8961,
+                "y": 59
+            }
+        }
+    },
+    "安杰丽卡特训屋": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    336,
+                    83,
+                    367,
+                    631
+                ],
+                "template": [
+                    "安杰丽卡特训屋.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "开始检查是否进入关卡界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8960,
+                "y": -209
+            }
+        }
+    },
+    "寻找可扫荡关卡-扫荡-前三个类型": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    794,
+                    184,
+                    36,
+                    19
+                ],
+                "end": [
+                    [
+                        831,
+                        367,
+                        37,
+                        24
+                    ]
+                ],
+                "duration": [
+                    1000
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 10531,
+                "y": -411
+            }
+        }
+    },
+    "开始检查是否进入关卡界面": {
+        "post_delay": 1500,
+        "next": [
+            "判断是否位于关卡界面",
+            "开始选择打什么类型"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9363,
+                "y": -180
+            }
+        }
+    },
+    "开始选择打什么类型": {
+        "post_delay": 3000,
+        "next": [
+            "兄贵健身房",
+            "安杰丽卡特训屋",
+            "女神的试炼",
+            "逃跑的宝藏",
+            "羁绊之地",
+            "永恒的神殿",
+            "律定之途",
+            "[JumpBack]滑动关卡列表"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8223,
+                "y": -18
+            }
+        }
+    },
+    "律定之途": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    336,
+                    83,
+                    367,
+                    631
+                ],
+                "template": [
+                    ""
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 8963,
+                "y": 1478
+            }
+        }
+    },
+    "永恒的神殿": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    336,
+                    83,
+                    367,
+                    631
+                ],
+                "template": [
+                    ""
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 8969,
+                "y": 1093
+            }
+        }
+    },
+    "滑动关卡列表": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    616,
+                    522,
+                    39,
+                    26
+                ],
+                "end": [
+                    [
+                        622,
+                        147,
+                        29,
+                        16
+                    ]
+                ],
+                "duration": [
+                    1000
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 8371,
+                "y": 811
+            }
+        }
+    },
+    "点击扫荡图标-前三个类型": {
+        "max_hit": 9486255,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    910,
+                    72,
+                    142,
+                    641
+                ],
+                "template": [
+                    "关卡扫荡图标.png"
+                ],
+                "green_mask": true,
+                "order_by": "Vertical",
+                "index": -1
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "选择扫荡开始-前三个类型"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10476,
+                "y": -1086
+            }
+        }
+    },
+    "确认扫荡开始-前三个类型": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    685,
+                    426,
+                    118,
+                    55
+                ],
+                "expected": [
+                    "确认"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11162,
+                "y": -1016
+            }
+        }
+    },
+    "羁绊之地": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    336,
+                    83,
+                    367,
+                    631
+                ],
+                "template": [
+                    "羁绊之地图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "开始检查是否进入关卡界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8954,
+                "y": 712
+            }
+        }
+    },
+    "进入秘境界面": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1169,
+                    94,
+                    111,
+                    425
+                ],
+                "template": [
+                    "秘境图标.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "选择日常活动界面",
+            "[JumpBack]进入秘境界面_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7491,
+                "y": -85
+            }
+        }
+    },
+    "进入秘境界面_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1169,
+                    94,
+                    111,
+                    425
+                ],
+                "template": [
+                    "秘境图标.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 7807,
+                "y": 190
+            }
+        }
+    },
+    "逃跑的宝藏": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    336,
+                    83,
+                    367,
+                    631
+                ],
+                "template": [
+                    "逃跑的宝藏.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "逃跑的宝藏扫荡开始",
+            "[JumpBack]逃跑的宝藏_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8949,
+                "y": 343
+            }
+        }
+    },
+    "逃跑的宝藏扫荡开始": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    834,
+                    603,
+                    162,
+                    84
+                ],
+                "template": [
+                    "扫荡图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9390,
+                "y": 180
+            }
+        }
+    },
+    "选择扫荡开始-前三个类型": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    671,
+                    67,
+                    249,
+                    650
+                ],
+                "template": [
+                    "扫荡图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "确认扫荡开始-前三个类型"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10832,
+                "y": -1048
+            }
+        }
+    },
+    "选择扫荡方式-前三个类型": {
+        "anchor": {
+            "判断是否需要跳过滑动屏幕": "寻找可扫荡关卡-扫荡-前三个类型"
+        },
+        "next": [
+            "剩余扫荡次数为0嘛-前三个类型",
+            "点击扫荡图标-前三个类型",
+            "[Anchor][JumpBack]判断是否需要跳过滑动屏幕",
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10108,
+                "y": -561
+            }
+        }
+    },
+    "选择日常活动界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1074,
+                    153,
+                    175,
+                    434
+                ],
+                "expected": [
+                    "日常"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "开始选择打什么类型"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7862,
+                "y": -65
+            }
+        }
+    },
+    "选择最靠下的关卡": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    970,
+                    48,
+                    239,
+                    667
+                ],
+                "template": [
+                    "关卡外出击图标.png"
+                ],
+                "order_by": "Vertical",
+                "index": -1
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "关卡内处理开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10215,
+                "y": 90
+            }
+        }
+    },
+    "选择连续作战方式-前三个类型": {
+        "next": [
+            "选择最靠下的关卡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9890,
+                "y": 177
+            }
+        }
+    },
+    "逃跑的宝藏_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    336,
+                    83,
+                    367,
+                    631
+                ],
+                "template": [
+                    "逃跑的宝藏.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 9274,
+                "y": 430
+            }
+        }
+    },
+    "开始选择完成关卡方式-四个类型": {
+        "next": [
+            "选择扫荡方式-前三个类型",
+            "选择连续作战方式-前三个类型"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9772,
+                "y": -246
+            }
+        }
+    },
+    "判断是否位于关卡界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    506,
+                    7,
+                    126,
+                    39
+                ],
+                "expected": [
+                    "每日奖励"
+                ]
+            }
+        },
+        "next": [
+            "开始选择完成关卡方式-四个类型"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9502,
+                "y": -391
+            }
+        }
+    },
+    "$__mpe_anchor_判断是否需要跳过滑动屏幕_刷体力": {
+        "$__mpe_code": {
+            "position": {
+                "x": 10557,
+                "y": -678
+            }
+        }
+    }
+}

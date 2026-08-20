@@ -3,51 +3,23 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1787109223582,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Langrisser\\assets\\resource\\pipeline\\友情点领取.json",
             "savedViewport": {
-                "x": -5193,
-                "y": -414,
+                "x": -5789,
+                "y": -368,
                 "zoom": 0.86
             },
             "filename": "友情点领取",
             "version": "v1.7.6"
         }
     },
-    "友情点领取开始": {
-        "next": [
-            "进入好友界面-友情点领取"
-        ],
+    "$__mpe_external_返回主界面开始_友情点领取": {
         "$__mpe_code": {
             "position": {
-                "x": 6064,
-                "y": 653
-            }
-        }
-    },
-    "进入好友界面-友情点领取": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    20,
-                    389,
-                    55,
-                    34
-                ],
-                "expected": [
-                    "好友"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "进入好友类别-友情点领取"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 6363,
-                "y": 694
+                "x": 7876,
+                "y": 648
             }
         }
     },
@@ -108,11 +80,43 @@
             }
         }
     },
-    "$__mpe_external_返回主界面开始_友情点领取": {
+    "友情点领取开始": {
+        "next": [
+            "进入好友界面-友情点领取"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 7876,
-                "y": 648
+                "x": 6064,
+                "y": 653
+            }
+        }
+    },
+    "进入好友界面-友情点领取": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    2,
+                    155,
+                    180,
+                    428
+                ],
+                "template": [
+                    "好友图标.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "进入好友类别-友情点领取"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6363,
+                "y": 694
             }
         }
     },
