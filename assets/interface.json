@@ -63,7 +63,7 @@
         {
             "name": "完成世界事件",
             "entry": "完成世界事件开始",
-            "default_check": true,
+            "default_check": false,
             "doc": "完成当前可用的世界事件"
         },
         {

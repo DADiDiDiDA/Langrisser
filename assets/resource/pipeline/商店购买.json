@@ -3,13 +3,24 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1787321100359,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Langrisser\\assets\\resource\\pipeline\\商店购买.json",
             "savedViewport": {
-                "x": -7983,
-                "y": -208,
-                "zoom": 0.75
+                "x": -6410,
+                "y": -158,
+                "zoom": 0.66
             },
             "filename": "商店购买",
-            "version": "v1.7.6"
+            "version": "v1.8.0"
+        }
+    },
+    "$__mpe_external_返回主界面开始_商店购买": {
+        "$__mpe_code": {
+            "position": {
+                "x": 11864,
+                "y": 907
+            }
         }
     },
     "商店购买开始": {
@@ -20,65 +31,6 @@
             "position": {
                 "x": 9949,
                 "y": 358
-            }
-        }
-    },
-    "进入商店图标": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    226,
-                    617,
-                    908,
-                    97
-                ],
-                "template": [
-                    "商店图标.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "选择神秘商品分类"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 10313,
-                "y": 312
-            }
-        }
-    },
-    "选择神秘商品分类": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    1114,
-                    104,
-                    155,
-                    516
-                ],
-                "expected": [
-                    "神秘"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2500,
-        "next": [
-            "寻找友情卷-第一行",
-            "寻找友情卷_第二行",
-            "返回主界面开始"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 10654,
-                "y": 347
             }
         }
     },
@@ -108,41 +60,15 @@
                 ]
             }
         },
+        "post_delay": 1500,
         "next": [
-            "确认购买商品"
+            "确认购买商品",
+            "已购买任务结束"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 11107,
-                "y": 4
-            }
-        }
-    },
-    "确认购买商品": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    532,
-                    428,
-                    259,
-                    104
-                ],
-                "template": [
-                    "金币购买图标.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "返回主界面开始"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 11601,
-                "y": 369
+                "x": 11098,
+                "y": -160
             }
         }
     },
@@ -172,21 +98,139 @@
                 ]
             }
         },
+        "post_delay": 1500,
         "next": [
-            "确认购买商品"
+            "确认购买商品",
+            "已购买任务结束"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 11167,
-                "y": 320
+                "x": 11132,
+                "y": 209
             }
         }
     },
-    "$__mpe_external_返回主界面开始_商店购买": {
+    "已购买任务结束": {
+        "next": [
+            "返回主界面开始"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 11864,
-                "y": 907
+                "x": 11506,
+                "y": 323
+            }
+        }
+    },
+    "确认购买商品": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    532,
+                    428,
+                    259,
+                    104
+                ],
+                "template": [
+                    "金币购买图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11610,
+                "y": -146
+            }
+        }
+    },
+    "进入商店图标": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    226,
+                    617,
+                    908,
+                    97
+                ],
+                "template": [
+                    "商店图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "选择神秘商品分类",
+            "[JumpBack]进入商店图标_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10313,
+                "y": 312
+            }
+        }
+    },
+    "进入商店图标_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    226,
+                    617,
+                    908,
+                    97
+                ],
+                "template": [
+                    "商店图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 10598,
+                "y": 584
+            }
+        }
+    },
+    "选择神秘商品分类": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1114,
+                    104,
+                    155,
+                    516
+                ],
+                "expected": [
+                    "神秘"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2500,
+        "next": [
+            "寻找友情卷-第一行",
+            "寻找友情卷_第二行",
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10664,
+                "y": 240
             }
         }
     }

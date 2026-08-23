@@ -3,16 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787150008297,
+            "lastSyncTime": 1787321104142,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\Langrisser\\assets\\resource\\pipeline\\竞技场.json",
             "savedViewport": {
-                "x": -2504,
-                "y": -458,
-                "zoom": 0.76
+                "x": -1143,
+                "y": -81,
+                "zoom": 0.5
             },
             "filename": "竞技场",
-            "version": "v1.7.6"
+            "version": "v1.8.0"
         }
     },
     "$__mpe_external_返回主界面开始_竞技场": {
@@ -42,19 +42,20 @@
             "type": "Click"
         },
         "next": [
-            "准备开始竞技场挑战"
+            "[JumpBack]关闭结算窗口_第二次",
+            "竞技场单次挑战结束"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4792,
-                "y": 1130
+                "x": 5288,
+                "y": 702
             }
         }
     },
     "准备开始竞技场挑战": {
         "next": [
             "检查剩余竞技场次数",
-            "开始竞技场挑战",
+            "[JumpBack]开始竞技场挑战",
             "[JumpBack]选择普通竞技场_第二次"
         ],
         "$__mpe_code": {
@@ -83,7 +84,8 @@
             "type": "Click"
         },
         "next": [
-            "选择快速作战"
+            "选择快速作战",
+            "[JumpBack]开始竞技场挑战_第二次"
         ],
         "$__mpe_code": {
             "position": {
@@ -146,12 +148,13 @@
         },
         "post_delay": 3000,
         "next": [
-            "关闭结算窗口"
+            "关闭结算窗口",
+            "[JumpBack]等待结算_第二次"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4890,
-                "y": 700
+                "x": 4946,
+                "y": 653
             }
         }
     },
@@ -231,7 +234,8 @@
         },
         "post_delay": 3000,
         "next": [
-            "等待结算"
+            "等待结算",
+            "[JumpBack]选择快速作战_第二次"
         ],
         "$__mpe_code": {
             "position": {
@@ -290,6 +294,113 @@
             "position": {
                 "x": 4188,
                 "y": 1045
+            }
+        }
+    },
+    "选择快速作战_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    292,
+                    593,
+                    123,
+                    49
+                ],
+                "expected": [
+                    "快速"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 4913,
+                "y": 1040
+            }
+        }
+    },
+    "关闭结算窗口_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    551,
+                    150,
+                    180,
+                    53
+                ],
+                "expected": [
+                    "速战结算"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5667,
+                "y": 609
+            }
+        }
+    },
+    "等待结算_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    556,
+                    143,
+                    168,
+                    60
+                ],
+                "expected": [
+                    "结算"
+                ]
+            }
+        },
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 5244,
+                "y": 978
+            }
+        }
+    },
+    "竞技场单次挑战结束": {
+        "$__mpe_code": {
+            "position": {
+                "x": 5736,
+                "y": 947
+            }
+        }
+    },
+    "开始竞技场挑战_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    873,
+                    441,
+                    180,
+                    108
+                ],
+                "template": [
+                    "竞技场挑战标志.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4631,
+                "y": 1035
             }
         }
     }

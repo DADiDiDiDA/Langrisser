@@ -3,16 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787145410246,
+            "lastSyncTime": 1787406154363,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\Langrisser\\assets\\resource\\pipeline\\关卡内处理.json",
             "savedViewport": {
-                "x": -4962,
-                "y": -321,
-                "zoom": 0.76
+                "x": -3908,
+                "y": -351,
+                "zoom": 0.66
             },
             "filename": "关卡内处理",
-            "version": "v1.7.6"
+            "version": "v1.8.0"
         }
     },
     "$__mpe_external_返回主界面开始_关卡内处理": {
@@ -29,8 +29,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4888,
-                "y": 730
+                "x": 4802,
+                "y": 667
             }
         }
     },
@@ -82,8 +82,33 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6262,
-                "y": 712
+                "x": 6204,
+                "y": 695
+            }
+        }
+    },
+    "开启单次自动作战-关卡内_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1192,
+                    74,
+                    86,
+                    191
+                ],
+                "template": [
+                    "自动战斗图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 6876,
+                "y": 1196
             }
         }
     },
@@ -106,12 +131,38 @@
             "type": "Click"
         },
         "next": [
-            "确认连续作战-关卡内"
+            "确认连续作战-关卡内",
+            "[JumpBack]开启连续作战-关卡内_第二次"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6126,
-                "y": 426
+                "x": 6071,
+                "y": 420
+            }
+        }
+    },
+    "开启连续作战-关卡内_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1102,
+                    71,
+                    177,
+                    234
+                ],
+                "template": [
+                    "连续战斗选项图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 6382,
+                "y": 152
             }
         }
     },
@@ -135,12 +186,38 @@
         },
         "next": [
             "开启单次自动作战-关卡内",
-            "[JumpBack]出击后提示"
+            "[JumpBack]出击后提示",
+            "[JumpBack]开始出击-关卡内_第二次"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5803,
-                "y": 778
+                "x": 5693,
+                "y": 850
+            }
+        }
+    },
+    "开始出击-关卡内_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1131,
+                    574,
+                    149,
+                    143
+                ],
+                "template": [
+                    "关卡内出击图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 6135,
+                "y": 1242
             }
         }
     },
@@ -172,6 +249,86 @@
             }
         }
     },
+    "开始进入世界事件关卡_第三次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    701,
+                    490,
+                    116,
+                    53
+                ],
+                "expected": [
+                    "前往"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1500,
+        "$__mpe_code": {
+            "position": {
+                "x": 5607,
+                "y": 319
+            }
+        }
+    },
+    "战斗好像失败了": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    410,
+                    267,
+                    246,
+                    121
+                ],
+                "expected": [
+                    "战斗失败"
+                ]
+            }
+        },
+        "post_delay": 3000,
+        "next": [
+            "确认战斗失败"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6922,
+                "y": 919
+            }
+        }
+    },
+    "确认战斗失败": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    494,
+                    426,
+                    94,
+                    63
+                ],
+                "expected": [
+                    "取消"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7208,
+                "y": 938
+            }
+        }
+    },
     "确认连续作战-关卡内": {
         "recognition": {
             "type": "OCR",
@@ -191,12 +348,38 @@
             "type": "Click"
         },
         "next": [
-            "等待连续作战结束-关卡内"
+            "等待连续作战结束-关卡内",
+            "[JumpBack]确认连续作战-关卡内_第二次"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6453,
-                "y": 428
+                "x": 6420,
+                "y": 439
+            }
+        }
+    },
+    "确认连续作战-关卡内_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    687,
+                    467,
+                    110,
+                    52
+                ],
+                "expected": [
+                    "确认"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 6697,
+                "y": 117
             }
         }
     },
@@ -204,7 +387,8 @@
         "timeout": -1,
         "next": [
             "开始战斗结算-关卡内",
-            "战斗好像失败了"
+            "战斗好像失败了",
+            "[JumpBack]开启单次自动作战-关卡内_第二次"
         ],
         "$__mpe_code": {
             "position": {
@@ -234,8 +418,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6715,
-                "y": 388
+                "x": 6765,
+                "y": 318
             }
         }
     },
@@ -298,65 +482,41 @@
         "post_delay": 4000,
         "next": [
             "开启连续作战-关卡内",
-            "开始出击-关卡内"
+            "开始出击-关卡内",
+            "[JumpBack]开始进入世界事件关卡_第三次",
+            "[JumpBack]选择最靠下的关卡_第二次"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5378,
-                "y": 632
+                "x": 5143,
+                "y": 602
             }
         }
     },
-    "战斗好像失败了": {
+    "选择最靠下的关卡_第二次": {
         "recognition": {
-            "type": "OCR",
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    438,
-                    300,
-                    128,
-                    60
+                    970,
+                    48,
+                    239,
+                    667
                 ],
-                "expected": [
-                    "战斗失败"
-                ]
-            }
-        },
-        "next": [
-            "确认战斗失败"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 6929,
-                "y": 907
-            }
-        }
-    },
-    "确认战斗失败": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    494,
-                    426,
-                    94,
-                    63
+                "template": [
+                    "关卡外出击图标.png"
                 ],
-                "expected": [
-                    "取消"
-                ]
+                "order_by": "Vertical",
+                "index": -1
             }
         },
         "action": {
             "type": "Click"
         },
-        "next": [
-            "返回主界面开始"
-        ],
         "$__mpe_code": {
             "position": {
-                "x": 7208,
-                "y": 938
+                "x": 5552,
+                "y": -3
             }
         }
     }

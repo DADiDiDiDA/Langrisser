@@ -3,13 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1787321108058,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Langrisser\\assets\\resource\\pipeline\\领取任务奖励.json",
             "savedViewport": {
-                "x": -8572,
-                "y": 76,
-                "zoom": 0.76
+                "x": -7088,
+                "y": -61,
+                "zoom": 0.66
             },
             "filename": "领取任务奖励",
-            "version": "v1.7.6"
+            "version": "v1.8.0"
         }
     },
     "$__mpe_external_返回主界面开始_领取任务奖励": {
@@ -43,8 +46,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 12118,
-                "y": 280
+                "x": 12248,
+                "y": 233
             }
         }
     },
@@ -105,47 +108,6 @@
             }
         }
     },
-    "进入每日任务界面-领取任务奖励": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    1114,
-                    130,
-                    159,
-                    442
-                ],
-                "expected": [
-                    "每日"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "无可领取奖励-领取任务奖励",
-            "一键领取奖励-领取任务奖励"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 11687,
-                "y": 78
-            }
-        }
-    },
-    "领取任务奖励开始": {
-        "next": [
-            "进入任务界面-领取任务奖励"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 11014,
-                "y": 59
-            }
-        }
-    },
     "进入任务界面-领取任务奖励第二次": {
         "recognition": {
             "type": "TemplateMatch",
@@ -168,6 +130,74 @@
             "position": {
                 "x": 11644,
                 "y": 429
+            }
+        }
+    },
+    "进入每日任务界面-领取任务奖励": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1114,
+                    130,
+                    159,
+                    442
+                ],
+                "expected": [
+                    "每日"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "无可领取奖励-领取任务奖励",
+            "一键领取奖励-领取任务奖励",
+            "[JumpBack]进入每日任务界面-领取任务奖励_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11687,
+                "y": 78
+            }
+        }
+    },
+    "领取任务奖励开始": {
+        "next": [
+            "进入任务界面-领取任务奖励"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11014,
+                "y": 59
+            }
+        }
+    },
+    "进入每日任务界面-领取任务奖励_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1114,
+                    130,
+                    159,
+                    442
+                ],
+                "expected": [
+                    "每日"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 11955,
+                "y": 454
             }
         }
     }

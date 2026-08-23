@@ -3,16 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787109223582,
+            "lastSyncTime": 1787321098909,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\Langrisser\\assets\\resource\\pipeline\\友情点领取.json",
             "savedViewport": {
-                "x": -5789,
-                "y": -368,
-                "zoom": 0.86
+                "x": -2773,
+                "y": -176,
+                "zoom": 0.5
             },
             "filename": "友情点领取",
-            "version": "v1.7.6"
+            "version": "v1.8.0"
         }
     },
     "$__mpe_external_返回主界面开始_友情点领取": {
@@ -111,12 +111,39 @@
             "type": "Click"
         },
         "next": [
-            "进入好友类别-友情点领取"
+            "进入好友类别-友情点领取",
+            "[JumpBack]进入好友界面-友情点领取_第二次"
         ],
         "$__mpe_code": {
             "position": {
                 "x": 6363,
                 "y": 694
+            }
+        }
+    },
+    "进入好友界面-友情点领取_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    2,
+                    155,
+                    180,
+                    428
+                ],
+                "template": [
+                    "好友图标.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 6626,
+                "y": 1027
             }
         }
     },
