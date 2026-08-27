@@ -3,16 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787321109613,
-            "isModifiedExternally": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Langrisser\\assets\\resource\\pipeline\\领取邮件.json",
             "savedViewport": {
-                "x": -1493,
-                "y": -236,
-                "zoom": 0.66
+                "x": -3667,
+                "y": -1149,
+                "zoom": 1.5
             },
             "filename": "领取邮件",
-            "version": "v1.8.0"
+            "version": "v1.9.0"
         }
     },
     "$__mpe_external_返回主界面开始_领取邮件": {
@@ -81,24 +78,64 @@
             "type": "Click"
         },
         "next": [
-            "开始全部领取邮件-领取邮件",
-            "无可领取奖励-领取邮件"
+            "邮箱界面处理"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3082,
-                "y": 612
+                "x": 2828,
+                "y": 535
             }
         }
     },
     "领取邮件开始": {
         "next": [
-            "进入邮箱界面-领取邮件"
+            "进入邮箱界面-领取邮件",
+            "进入邮箱界面-图标"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2759,
-                "y": 652
+                "x": 2489,
+                "y": 663
+            }
+        }
+    },
+    "邮箱界面处理": {
+        "next": [
+            "开始全部领取邮件-领取邮件",
+            "无可领取奖励-领取邮件"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3137,
+                "y": 574
+            }
+        }
+    },
+    "进入邮箱界面-图标": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    7,
+                    156,
+                    144,
+                    408
+                ],
+                "template": [
+                    "邮件图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "邮箱界面处理"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2844,
+                "y": 837
             }
         }
     }

@@ -3,16 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787321108058,
-            "isModifiedExternally": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Langrisser\\assets\\resource\\pipeline\\领取任务奖励.json",
             "savedViewport": {
-                "x": -7088,
-                "y": -61,
-                "zoom": 0.66
+                "x": -6940,
+                "y": 136,
+                "zoom": 0.6
             },
             "filename": "领取任务奖励",
-            "version": "v1.8.0"
+            "version": "v1.9.0"
         }
     },
     "$__mpe_external_返回主界面开始_领取任务奖励": {

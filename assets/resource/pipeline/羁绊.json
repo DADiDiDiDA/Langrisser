@@ -1,0 +1,343 @@
+{
+    "$__mpe_config_羁绊": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": -1315,
+                "y": 276,
+                "zoom": 0.69
+            },
+            "filename": "羁绊",
+            "version": "v1.9.0"
+        }
+    },
+    "$__mpe_external_返回主界面开始_羁绊": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2031,
+                "y": 328
+            }
+        }
+    },
+    "关闭扫荡结算界面-羁绊": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    548,
+                    91,
+                    184,
+                    66
+                ],
+                "expected": [
+                    "扫荡结算"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    -136,
+                    560,
+                    0,
+                    0
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2779,
+                "y": -226
+            }
+        }
+    },
+    "开始羁绊扫荡-羁绊": {
+        "next": [
+            "[JumpBack]选择角色开始扫荡-羁绊",
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1595,
+                "y": 117
+            }
+        }
+    },
+    "未选择关卡处理-羁绊": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1159,
+                    271,
+                    89,
+                    348
+                ],
+                "template": [
+                    "羁绊之地扫荡关卡未选择图标.png"
+                ],
+                "threshold": [
+                    0.85
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2347,
+                "y": -450
+            }
+        }
+    },
+    "点击扫荡图标-羁绊": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    910,
+                    612,
+                    181,
+                    92
+                ],
+                "template": [
+                    "扫荡图标.png",
+                    "扫荡图标2.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1500,
+        "next": [
+            "关闭扫荡结算界面-羁绊",
+            "[JumpBack]点击扫荡图标-羁绊_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2446,
+                "y": -161
+            }
+        }
+    },
+    "羁绊开始": {
+        "next": [
+            "进入羁绊界面-羁绊"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 705,
+                "y": 132
+            }
+        }
+    },
+    "进入羁绊界面-羁绊": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    234,
+                    616,
+                    911,
+                    99
+                ],
+                "template": [
+                    "羁绊图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "选择扫荡图标-羁绊",
+            "[JumpBack]进入羁绊界面-羁绊_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 995,
+                "y": 88
+            }
+        }
+    },
+    "选择扫荡图标-羁绊": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    638,
+                    274,
+                    76,
+                    79
+                ],
+                "expected": [
+                    "扫荡"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]选择扫荡图标-羁绊_第二次",
+            "开始羁绊扫荡-羁绊"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1316,
+                "y": 128
+            }
+        }
+    },
+    "选择角色开始扫荡-羁绊": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    742,
+                    148,
+                    521,
+                    565
+                ],
+                "template": [
+                    "羁绊扫荡图标.png"
+                ],
+                "green_mask": true,
+                "threshold": [
+                    0.78
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1500,
+        "next": [
+            "[JumpBack]未选择关卡处理-羁绊",
+            "点击扫荡图标-羁绊",
+            "[JumpBack]选择角色开始扫荡-羁绊_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1983,
+                "y": -111
+            }
+        }
+    },
+    "选择角色开始扫荡-羁绊_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    742,
+                    148,
+                    521,
+                    565
+                ],
+                "template": [
+                    "羁绊扫荡图标.png"
+                ],
+                "green_mask": true,
+                "threshold": [
+                    0.78
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2413,
+                "y": 270
+            }
+        }
+    },
+    "点击扫荡图标-羁绊_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    910,
+                    612,
+                    181,
+                    92
+                ],
+                "template": [
+                    "扫荡图标.png",
+                    "扫荡图标2.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2773,
+                "y": 97
+            }
+        }
+    },
+    "进入羁绊界面-羁绊_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    234,
+                    616,
+                    911,
+                    99
+                ],
+                "template": [
+                    "羁绊图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1266,
+                "y": -172
+            }
+        }
+    },
+    "选择扫荡图标-羁绊_第二次": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    638,
+                    274,
+                    76,
+                    79
+                ],
+                "expected": [
+                    "扫荡"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1585,
+                "y": 359
+            }
+        }
+    }
+}

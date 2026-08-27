@@ -3,16 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787321104142,
-            "isModifiedExternally": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Langrisser\\assets\\resource\\pipeline\\竞技场.json",
             "savedViewport": {
-                "x": -1143,
-                "y": -81,
-                "zoom": 0.5
+                "x": -3288,
+                "y": -274,
+                "zoom": 0.69
             },
             "filename": "竞技场",
-            "version": "v1.8.0"
+            "version": "v1.9.0"
         }
     },
     "$__mpe_external_返回主界面开始_竞技场": {
