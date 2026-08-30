@@ -4,12 +4,12 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -59,
-                "y": -690,
-                "zoom": 0.52
+                "x": -66,
+                "y": -79,
+                "zoom": 0.66
             },
             "filename": "返回主界面",
-            "version": "v1.9.0"
+            "version": "v1.9.1"
         }
     },
     "主界面特征1": {
@@ -142,8 +142,8 @@
         "post_delay": 1500,
         "$__mpe_code": {
             "position": {
-                "x": 1029,
-                "y": 1133
+                "x": 1056,
+                "y": 607
             }
         }
     },
@@ -168,8 +168,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 1030,
-                "y": 824
+                "x": 1033,
+                "y": 1124
             }
         }
     },
@@ -292,8 +292,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 1052,
-                "y": 569
+                "x": 1028,
+                "y": 892
             }
         }
     },
@@ -353,10 +353,10 @@
             "[JumpBack]返回过头了吗",
             "[JumpBack]右上角叉号",
             "是否位于主界面",
+            "[JumpBack]右下角情况处理",
             "[JumpBack]点击进入游戏",
             "[JumpBack]左上角返回",
             "[JumpBack]版本更新",
-            "[JumpBack]右下角情况处理",
             "[JumpBack]左下角取消关卡",
             "[JumpBack]战斗好像失败了_返回主界面",
             "[JumpBack]按Esc返回主界面",

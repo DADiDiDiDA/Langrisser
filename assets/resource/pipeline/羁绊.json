@@ -4,19 +4,19 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -1315,
-                "y": 276,
-                "zoom": 0.69
+                "x": -661,
+                "y": 126,
+                "zoom": 0.66
             },
             "filename": "羁绊",
-            "version": "v1.9.0"
+            "version": "v1.9.1"
         }
     },
     "$__mpe_external_返回主界面开始_羁绊": {
         "$__mpe_code": {
             "position": {
-                "x": 2031,
-                "y": 328
+                "x": 1984,
+                "y": 561
             }
         }
     },
@@ -48,8 +48,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 2779,
-                "y": -226
+                "x": 2813,
+                "y": -429
             }
         }
     },
@@ -118,6 +118,7 @@
         "post_delay": 1500,
         "next": [
             "关闭扫荡结算界面-羁绊",
+            "体力不足无法扫荡-羁绊",
             "[JumpBack]点击扫荡图标-羁绊_第二次"
         ],
         "$__mpe_code": {
@@ -337,6 +338,28 @@
             "position": {
                 "x": 1585,
                 "y": 359
+            }
+        }
+    },
+    "体力不足无法扫荡-羁绊": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    579,
+                    91,
+                    120,
+                    39
+                ],
+                "expected": [
+                    "体力"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2907,
+                "y": -176
             }
         }
     }
