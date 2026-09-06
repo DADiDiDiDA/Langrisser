@@ -4,12 +4,12 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -66,
-                "y": -79,
-                "zoom": 0.66
+                "x": 89,
+                "y": -189,
+                "zoom": 0.76
             },
             "filename": "返回主界面",
-            "version": "v1.9.1"
+            "version": "v1.9.2"
         }
     },
     "主界面特征1": {
@@ -53,17 +53,6 @@
             "position": {
                 "x": 1314,
                 "y": -457
-            }
-        }
-    },
-    "任务疑似出错": {
-        "action": {
-            "type": "Screencap"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 550,
-                "y": 1127
             }
         }
     },
@@ -233,7 +222,7 @@
         }
     },
     "按Esc返回主界面": {
-        "max_hit": 15,
+        "max_hit": 10,
         "action": {
             "type": "ClickKey",
             "param": {
@@ -349,6 +338,7 @@
     },
     "返回主界面开始": {
         "post_delay": 2500,
+        "timeout": 300000,
         "next": [
             "[JumpBack]返回过头了吗",
             "[JumpBack]右上角叉号",
@@ -359,8 +349,7 @@
             "[JumpBack]版本更新",
             "[JumpBack]左下角取消关卡",
             "[JumpBack]战斗好像失败了_返回主界面",
-            "[JumpBack]按Esc返回主界面",
-            "任务疑似出错"
+            "[JumpBack]按Esc返回主界面"
         ],
         "$__mpe_code": {
             "position": {

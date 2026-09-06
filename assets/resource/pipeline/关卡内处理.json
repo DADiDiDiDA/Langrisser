@@ -4,12 +4,12 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -3995,
-                "y": -148,
-                "zoom": 0.69
+                "x": -3682,
+                "y": -386,
+                "zoom": 0.66
             },
             "filename": "关卡内处理",
-            "version": "v1.9.0"
+            "version": "v1.9.2"
         }
     },
     "$__mpe_external_返回主界面开始_关卡内处理": {
@@ -384,6 +384,7 @@
     },
     "等待关卡战斗结束-关卡内": {
         "timeout": -1,
+        "rate_limit": 4000,
         "next": [
             "开始战斗结算-关卡内",
             "战斗好像失败了",
