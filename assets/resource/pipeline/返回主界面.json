@@ -3,13 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1789000363940,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Langrisser\\assets\\resource\\pipeline\\返回主界面.json",
             "savedViewport": {
-                "x": 89,
-                "y": -189,
-                "zoom": 0.76
+                "x": -32,
+                "y": -903,
+                "zoom": 0.57
             },
             "filename": "返回主界面",
-            "version": "v1.9.2"
+            "version": "v1.9.3"
         }
     },
     "主界面特征1": {
@@ -29,8 +33,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 996,
-                "y": -450
+                "x": 943,
+                "y": -674
             }
         }
     },
@@ -51,8 +55,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1314,
-                "y": -457
+                "x": 1338,
+                "y": -663
             }
         }
     },
@@ -76,8 +80,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1446,
-                "y": -204
+                "x": 1435,
+                "y": -381
             }
         }
     },
@@ -104,8 +108,8 @@
         "post_delay": 1500,
         "$__mpe_code": {
             "position": {
-                "x": 1101,
-                "y": 31
+                "x": 1067,
+                "y": -82
             }
         }
     },
@@ -131,8 +135,8 @@
         "post_delay": 1500,
         "$__mpe_code": {
             "position": {
-                "x": 1056,
-                "y": 607
+                "x": 1032,
+                "y": 636
             }
         }
     },
@@ -190,8 +194,8 @@
     "已位于主界面任务结束": {
         "$__mpe_code": {
             "position": {
-                "x": 1462,
-                "y": 349
+                "x": 1454,
+                "y": 222
             }
         }
     },
@@ -216,8 +220,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1043,
-                "y": 1748
+                "x": 1001,
+                "y": 1821
             }
         }
     },
@@ -234,8 +238,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 992,
-                "y": 2048
+                "x": 995,
+                "y": 2165
             }
         }
     },
@@ -255,8 +259,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1080,
-                "y": 325
+                "x": 1056,
+                "y": 201
             }
         }
     },
@@ -331,8 +335,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1355,
-                "y": 1760
+                "x": 1341,
+                "y": 1864
             }
         }
     },
@@ -343,6 +347,7 @@
             "[JumpBack]返回过头了吗",
             "[JumpBack]右上角叉号",
             "是否位于主界面",
+            "[JumpBack]需要版本更新",
             "[JumpBack]右下角情况处理",
             "[JumpBack]点击进入游戏",
             "[JumpBack]左上角返回",
@@ -379,8 +384,70 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1102,
-                "y": -234
+                "x": 1036,
+                "y": -395
+            }
+        }
+    },
+    "需要版本更新": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    710,
+                    438,
+                    70,
+                    52
+                ],
+                "expected": [
+                    "更新"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "等待游戏更新完成"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 911,
+                "y": 422
+            }
+        }
+    },
+    "等待游戏更新完成": {
+        "timeout": -1,
+        "next": [
+            "游戏更新完成"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1220,
+                "y": 412
+            }
+        }
+    },
+    "游戏更新完成": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    749,
+                    43,
+                    149,
+                    52
+                ],
+                "expected": [
+                    "游戏公告"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1497,
+                "y": 401
             }
         }
     }
