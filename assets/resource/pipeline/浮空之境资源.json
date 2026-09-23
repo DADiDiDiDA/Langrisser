@@ -1,0 +1,206 @@
+{
+    "$__mpe_config_浮空之境资源": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": -2034,
+                "y": 53,
+                "zoom": 0.66
+            },
+            "filename": "浮空之境资源",
+            "version": "v1.10.1"
+        }
+    },
+    "$__mpe_external_返回主界面开始_浮空之境资源": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4880,
+                "y": 458
+            }
+        }
+    },
+    "浮空之境资源开始": {
+        "next": [
+            "进入浮空之境界面-浮空之境",
+            "[JumpBack]进入浮空之境菜单-浮空之境",
+            "[JumpBack]好像未处于主界面-浮空之境"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3408,
+                "y": 46
+            }
+        }
+    },
+    "点击一键领取-浮空之境": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1161,
+                    447,
+                    115,
+                    121
+                ],
+                "template": [
+                    "浮空之境一键领取图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]点击一键领取-浮空之境_第二次",
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4350,
+                "y": 0
+            }
+        }
+    },
+    "进入浮空之境界面-浮空之境": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1179,
+                    485,
+                    92,
+                    40
+                ],
+                "expected": [
+                    "浮空之境"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    -24,
+                    0,
+                    0
+                ]
+            }
+        },
+        "next": [
+            "点击一键领取-浮空之境",
+            "[JumpBack]进入浮空之境界面-浮空之境_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3894,
+                "y": -166
+            }
+        }
+    },
+    "进入浮空之境菜单-浮空之境": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    20,
+                    669,
+                    92,
+                    49
+                ],
+                "expected": [
+                    "浮空城"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    -45,
+                    0,
+                    0
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 3862,
+                "y": 120
+            }
+        }
+    },
+    "点击一键领取-浮空之境_第二次": {
+        "max_hit": 2,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1161,
+                    447,
+                    115,
+                    121
+                ],
+                "template": [
+                    "浮空之境一键领取图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4658,
+                "y": -173
+            }
+        }
+    },
+    "进入浮空之境界面-浮空之境_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1179,
+                    485,
+                    92,
+                    40
+                ],
+                "expected": [
+                    "浮空之境"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    -24,
+                    0,
+                    0
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4189,
+                "y": 292
+            }
+        }
+    },
+    "好像未处于主界面-浮空之境": {
+        "max_hit": 2,
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3814,
+                "y": 496
+            }
+        }
+    }
+}

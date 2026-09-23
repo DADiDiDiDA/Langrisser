@@ -3,13 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1789776590541,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Langrisser\\assets\\resource\\pipeline\\刷体力.json",
             "savedViewport": {
-                "x": -5563,
-                "y": 656,
-                "zoom": 0.52
+                "x": -3376,
+                "y": 62,
+                "zoom": 0.5
             },
             "filename": "刷体力",
-            "version": "v1.9.0"
+            "version": "v1.10.1"
         }
     },
     "$__mpe_anchor_判断是否需要跳过滑动屏幕_刷体力": {
@@ -33,7 +37,13 @@
             "position": {
                 "x": 12643,
                 "y": -525
-            }
+            },
+            "extra_positions": [
+                {
+                    "x": 7646,
+                    "y": 555
+                }
+            ]
         }
     },
     "兄贵健身房": {
@@ -69,10 +79,10 @@
             "type": "OCR",
             "param": {
                 "roi": [
-                    506,
-                    7,
-                    126,
-                    39
+                    496,
+                    5,
+                    269,
+                    53
                 ],
                 "expected": [
                     "每日奖励"
@@ -91,12 +101,38 @@
     },
     "刷体力开始": {
         "next": [
-            "进入秘境界面"
+            "进入秘境界面",
+            "[JumpBack]好像不位于主界面-刷体力"
         ],
         "$__mpe_code": {
             "position": {
                 "x": 7036,
                 "y": -2
+            }
+        }
+    },
+    "剩余体力不足任务结束-前三个类型": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    569,
+                    91,
+                    136,
+                    39
+                ],
+                "expected": [
+                    "体力"
+                ]
+            }
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11128,
+                "y": -692
             }
         }
     },
@@ -245,7 +281,6 @@
             "女神的试炼",
             "逃跑的宝藏",
             "羁绊之地",
-            "永恒的神殿",
             "律定之途",
             "[JumpBack]滑动关卡列表"
         ],
@@ -267,42 +302,20 @@
                     631
                 ],
                 "template": [
-                    ""
+                    "律定之途.png"
                 ]
             }
         },
         "action": {
             "type": "Click"
         },
+        "next": [
+            "开始检查是否进入关卡界面"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 8963,
-                "y": 1478
-            }
-        }
-    },
-    "永恒的神殿": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    336,
-                    83,
-                    367,
-                    631
-                ],
-                "template": [
-                    ""
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 8969,
-                "y": 1093
+                "x": 8923,
+                "y": 1056
             }
         }
     },
@@ -338,7 +351,6 @@
         }
     },
     "点击扫荡图标-前三个类型": {
-        "max_hit": 9486255,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -371,7 +383,6 @@
         }
     },
     "点击扫荡图标-前三个类型_第二次": {
-        "max_hit": 9486255,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -638,6 +649,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "确认扫荡开始-前三个类型",
             "[JumpBack]选择扫荡开始-前三个类型_第二次",
@@ -668,6 +680,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 11079,
@@ -761,28 +774,15 @@
             }
         }
     },
-    "剩余体力不足任务结束-前三个类型": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    569,
-                    91,
-                    136,
-                    39
-                ],
-                "expected": [
-                    "体力"
-                ]
-            }
-        },
+    "好像不位于主界面-刷体力": {
+        "max_hit": 2,
         "next": [
             "返回主界面开始"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 11128,
-                "y": -692
+                "x": 7360,
+                "y": 286
             }
         }
     }

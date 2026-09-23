@@ -4,20 +4,26 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -4359,
-                "y": -424,
-                "zoom": 0.69
+                "x": -3690,
+                "y": -407,
+                "zoom": 0.66
             },
             "filename": "友情点领取",
-            "version": "v1.9.0"
+            "version": "v1.10.1"
         }
     },
     "$__mpe_external_返回主界面开始_友情点领取": {
         "$__mpe_code": {
             "position": {
-                "x": 7876,
-                "y": 648
-            }
+                "x": 7906,
+                "y": 669
+            },
+            "extra_positions": [
+                {
+                    "x": 6538,
+                    "y": 1359
+                }
+            ]
         }
     },
     "全部赠送友情点-友情点领取": {
@@ -38,14 +44,14 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 2000,
         "next": [
+            "[JumpBack]全部赠送友情点-友情点领取_第二次",
             "全部领取友情点-友情点领取"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 7168,
-                "y": 706
+                "x": 7145,
+                "y": 705
             }
         }
     },
@@ -68,6 +74,7 @@
             "type": "Click"
         },
         "next": [
+            "[JumpBack]全部领取友情点-友情点领取_第二次",
             "返回主界面开始"
         ],
         "$__mpe_code": {
@@ -79,7 +86,8 @@
     },
     "友情点领取开始": {
         "next": [
-            "进入好友界面-友情点领取"
+            "进入好友界面-友情点领取",
+            "[JumpBack]好像不位于主界面-友情点领取"
         ],
         "$__mpe_code": {
             "position": {
@@ -193,8 +201,72 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 7071,
-                "y": 985
+                "x": 7033,
+                "y": 1032
+            }
+        }
+    },
+    "好像不位于主界面-友情点领取": {
+        "max_hit": 2,
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6252,
+                "y": 1090
+            }
+        }
+    },
+    "全部赠送友情点-友情点领取_第二次": {
+        "max_hit": 2,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    179,
+                    622,
+                    147,
+                    58
+                ],
+                "expected": [
+                    "全部赠送"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 7406,
+                "y": 368
+            }
+        }
+    },
+    "全部领取友情点-友情点领取_第二次": {
+        "max_hit": 2,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    401,
+                    622,
+                    154,
+                    52
+                ],
+                "expected": [
+                    "全部领取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 7834,
+                "y": 844
             }
         }
     }
