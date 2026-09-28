@@ -67,12 +67,6 @@
             "doc": "执行一次竞技场快速作战挑战"
         },
         {
-            "name": "完成世界事件",
-            "entry": "完成世界事件开始",
-            "default_check": true,
-            "doc": "完成当前可用的世界事件"
-        },
-        {
             "name": "完成碎片扫荡",
             "entry": "羁绊开始",
             "default_check": true,
@@ -124,6 +118,12 @@
             "entry": "友情池召唤一次开始",
             "default_check": true,
             "doc": "使用友情券进行一次友情池召唤"
+        },
+        {
+            "name": "完成世界事件",
+            "entry": "完成世界事件开始",
+            "default_check": true,
+            "doc": "完成当前可用的世界事件"
         },
         {
             "name": "领取任务奖励（第二次）",

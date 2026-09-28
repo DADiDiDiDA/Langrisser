@@ -3,17 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1789776590541,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Langrisser\\assets\\resource\\pipeline\\刷体力.json",
             "savedViewport": {
-                "x": -3376,
-                "y": 62,
-                "zoom": 0.5
+                "x": -6457,
+                "y": 742,
+                "zoom": 0.65
             },
             "filename": "刷体力",
-            "version": "v1.10.1"
+            "version": "v2.0.0"
         }
     },
     "$__mpe_anchor_判断是否需要跳过滑动屏幕_刷体力": {
@@ -131,23 +127,18 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 11128,
-                "y": -692
+                "x": 11123,
+                "y": -764
             }
         }
     },
     "剩余扫荡次数为0嘛-前三个类型": {
         "recognition": {
-            "type": "OCR",
+            "type": "Or",
             "param": {
-                "roi": [
-                    405,
-                    8,
-                    73,
-                    44
-                ],
-                "expected": [
-                    "0"
+                "any_of": [
+                    "剩余扫荡次数为0嘛-前三个类型_判断1",
+                    "剩余扫荡次数为0嘛-前三个类型_判断2"
                 ]
             }
         },
@@ -156,8 +147,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 10497,
-                "y": -1539
+                "x": 10444,
+                "y": -1745
             }
         }
     },
@@ -373,16 +364,18 @@
         },
         "next": [
             "选择扫荡开始-前三个类型",
-            "[JumpBack]点击扫荡图标-前三个类型_第二次"
+            "[JumpBack]点击扫荡图标-前三个类型_第二次",
+            "无可用扫荡次数-前三个类型"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 10481,
-                "y": -1197
+                "x": 10484,
+                "y": -1209
             }
         }
     },
     "点击扫荡图标-前三个类型_第二次": {
+        "max_hit": 10,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -405,8 +398,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 10803,
-                "y": -1443
+                "x": 10822,
+                "y": -1583
             }
         }
     },
@@ -435,8 +428,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 11153,
-                "y": -1033
+                "x": 11188,
+                "y": -1068
             }
         }
     },
@@ -460,8 +453,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 11488,
-                "y": -801
+                "x": 11472,
+                "y": -882
             }
         }
     },
@@ -626,8 +619,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 9390,
-                "y": 180
+                "x": 9524,
+                "y": 87
             }
         }
     },
@@ -657,8 +650,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 10832,
-                "y": -1048
+                "x": 10823,
+                "y": -1155
             }
         }
     },
@@ -683,8 +676,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 11079,
-                "y": -1250
+                "x": 11145,
+                "y": -1418
             }
         }
     },
@@ -783,6 +776,86 @@
             "position": {
                 "x": 7360,
                 "y": 286
+            }
+        }
+    },
+    "无可用扫荡次数-前三个类型": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    553,
+                    59,
+                    404,
+                    647
+                ],
+                "template": [
+                    "无扫荡次数图标.png"
+                ]
+            }
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10832,
+                "y": -712
+            }
+        }
+    },
+    "剩余扫荡次数为0嘛-前三个类型_判断2": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    411,
+                    9,
+                    29,
+                    34
+                ],
+                "expected": [
+                    "0"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 10768,
+                "y": -2035
+            }
+        }
+    },
+    "剩余扫荡次数为0嘛-前三个类型_判断1": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "roi": [
+                    394,
+                    13,
+                    81,
+                    29
+                ],
+                "lower": [
+                    [
+                        220,
+                        10,
+                        10
+                    ]
+                ],
+                "upper": [
+                    [
+                        220,
+                        10,
+                        10
+                    ]
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 10307,
+                "y": -2041
             }
         }
     }

@@ -4,12 +4,12 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -96,
-                "y": -104,
-                "zoom": 1
+                "x": -591,
+                "y": 148,
+                "zoom": 0.6
             },
             "filename": "羁绊",
-            "version": "v1.10.1"
+            "version": "v2.0.0"
         }
     },
     "$__mpe_external_返回主界面开始_羁绊": {
@@ -82,6 +82,7 @@
         }
     },
     "开始羁绊扫荡-羁绊": {
+        "post_delay": 2000,
         "next": [
             "[JumpBack]选择角色开始扫荡-羁绊",
             "剩余挑战次数为0-羁绊_第二次",
@@ -162,8 +163,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2435,
-                "y": -112
+                "x": 2430,
+                "y": -117
             }
         }
     },
@@ -332,7 +333,7 @@
                 ],
                 "green_mask": true,
                 "threshold": [
-                    0.8
+                    0.75
                 ]
             }
         },
