@@ -3,28 +3,32 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1790843437877,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Langrisser\\assets\\resource\\pipeline\\完成世界事件.json",
             "savedViewport": {
-                "x": -2124,
-                "y": -333,
+                "x": -2648,
+                "y": -50,
                 "zoom": 0.66
             },
             "filename": "完成世界事件",
-            "version": "v1.10.1"
+            "version": "v2.0.5"
         }
     },
     "$__mpe_external_关卡内处理开始_完成世界事件": {
         "$__mpe_code": {
             "position": {
-                "x": 5650,
-                "y": 916
+                "x": 6283,
+                "y": 614
             }
         }
     },
     "$__mpe_external_返回主界面开始_完成世界事件": {
         "$__mpe_code": {
             "position": {
-                "x": 5303,
-                "y": 1002
+                "x": 6626,
+                "y": 392
             },
             "extra_positions": [
                 {
@@ -34,6 +38,45 @@
             ]
         }
     },
+    "判断是否打开世界事件界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    938,
+                    54,
+                    184,
+                    63
+                ],
+                "expected": [
+                    "事",
+                    "件",
+                    "Event"
+                ]
+            }
+        },
+        "next": [
+            "选择世界事件"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4627,
+                "y": 543
+            }
+        }
+    },
+    "好像不位于主界面-完成世界事件": {
+        "max_hit": 2,
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3874,
+                "y": 940
+            }
+        }
+    },
     "完成世界事件开始": {
         "next": [
             "进入世界事件选择界面",
@@ -41,8 +84,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3590,
-                "y": 726
+                "x": 3426,
+                "y": 681
             }
         }
     },
@@ -72,8 +115,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5039,
-                "y": 584
+                "x": 5642,
+                "y": 59
             }
         }
     },
@@ -97,8 +140,19 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 5379,
-                "y": 396
+                "x": 6193,
+                "y": -64
+            }
+        }
+    },
+    "无可用任务界面": {
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4660,
+                "y": 1552
             }
         }
     },
@@ -150,7 +204,7 @@
         "rate_limit": 500,
         "next": [
             "无可用的世界事件",
-            "选择世界事件",
+            "判断是否打开世界事件界面",
             "[JumpBack]进入世界事件选择界面_第二次",
             "无可用任务界面"
         ],
@@ -194,56 +248,38 @@
             "type": "OCR",
             "param": {
                 "roi": [
-                    1062,
-                    104,
-                    128,
-                    492
+                    1196,
+                    180,
+                    42,
+                    42
                 ],
                 "expected": [
-                    "消耗"
+                    "扫",
+                    "荡"
                 ]
             }
         },
-        "pre_wait_freezes": 2000,
         "action": {
-            "type": "Click"
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    -254,
+                    0,
+                    0,
+                    0
+                ]
+            }
         },
         "post_delay": 4000,
         "next": [
             "开始进入世界事件关卡",
+            "需要恢复体力",
             "[JumpBack]选择世界事件_第二次"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4717,
-                "y": 470
-            }
-        }
-    },
-    "选择世界事件_第二次": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    1062,
-                    104,
-                    128,
-                    492
-                ],
-                "expected": [
-                    "消耗"
-                ]
-            }
-        },
-        "pre_wait_freezes": 2000,
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 4000,
-        "$__mpe_code": {
-            "position": {
-                "x": 5002,
-                "y": 286
+                "x": 4961,
+                "y": 344
             }
         }
     },
@@ -267,31 +303,43 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5482,
-                "y": 601
+                "x": 6285,
+                "y": 299
             }
         }
     },
-    "无可用任务界面": {
-        "next": [
-            "返回主界面开始"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4660,
-                "y": 1552
+    "选择世界事件_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1196,
+                    180,
+                    42,
+                    42
+                ],
+                "expected": [
+                    "扫",
+                    "荡"
+                ]
             }
-        }
-    },
-    "好像不位于主界面-完成世界事件": {
-        "max_hit": 2,
-        "next": [
-            "返回主界面开始"
-        ],
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    -254,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        },
+        "post_delay": 4000,
         "$__mpe_code": {
             "position": {
-                "x": 3874,
-                "y": 940
+                "x": 5357,
+                "y": 600
             }
         }
     }

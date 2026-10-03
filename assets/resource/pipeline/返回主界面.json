@@ -3,17 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1789000363940,
+            "lastSyncTime": 1790823217597,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\Langrisser\\assets\\resource\\pipeline\\返回主界面.json",
             "savedViewport": {
-                "x": -32,
-                "y": -903,
-                "zoom": 0.57
+                "x": 151,
+                "y": -498,
+                "zoom": 0.66
             },
             "filename": "返回主界面",
-            "version": "v1.9.3"
+            "version": "v2.0.5"
         }
     },
     "主界面特征1": {
@@ -33,8 +33,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 943,
-                "y": -674
+                "x": 925,
+                "y": -970
             }
         }
     },
@@ -55,8 +55,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1338,
-                "y": -663
+                "x": 1391,
+                "y": -1025
             }
         }
     },
@@ -80,8 +80,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1435,
-                "y": -381
+                "x": 1483,
+                "y": -621
             }
         }
     },
@@ -108,8 +108,8 @@
         "post_delay": 1500,
         "$__mpe_code": {
             "position": {
-                "x": 1067,
-                "y": -82
+                "x": 1074,
+                "y": -282
             }
         }
     },
@@ -135,8 +135,8 @@
         "post_delay": 1500,
         "$__mpe_code": {
             "position": {
-                "x": 1032,
-                "y": 636
+                "x": 1006,
+                "y": 556
             }
         }
     },
@@ -161,8 +161,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 1033,
-                "y": 1124
+                "x": 1000,
+                "y": 1589
             }
         }
     },
@@ -186,16 +186,16 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1017,
-                "y": 1575
+                "x": 975,
+                "y": 2127
             }
         }
     },
     "已位于主界面任务结束": {
         "$__mpe_code": {
             "position": {
-                "x": 1454,
-                "y": 222
+                "x": 1484,
+                "y": 107
             }
         }
     },
@@ -220,8 +220,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1001,
-                "y": 1821
+                "x": 945,
+                "y": 2391
             }
         }
     },
@@ -238,8 +238,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 995,
-                "y": 2165
+                "x": 949,
+                "y": 2717
             }
         }
     },
@@ -259,8 +259,30 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1056,
-                "y": 201
+                "x": 1058,
+                "y": 46
+            }
+        }
+    },
+    "游戏更新完成": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    749,
+                    43,
+                    149,
+                    52
+                ],
+                "expected": [
+                    "游戏公告"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1596,
+                "y": 283
             }
         }
     },
@@ -285,8 +307,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 1028,
-                "y": 892
+                "x": 1007,
+                "y": 810
             }
         }
     },
@@ -310,8 +332,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1029,
-                "y": 1387
+                "x": 1004,
+                "y": 1888
             }
         }
     },
@@ -335,8 +357,20 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1341,
-                "y": 1864
+                "x": 1380,
+                "y": 2441
+            }
+        }
+    },
+    "等待游戏更新完成": {
+        "timeout": -1,
+        "next": [
+            "游戏更新完成"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1243,
+                "y": 325
             }
         }
     },
@@ -350,6 +384,7 @@
             "[JumpBack]需要版本更新",
             "[JumpBack]右下角情况处理",
             "[JumpBack]点击进入游戏",
+            "[JumpBack]关闭事件菜单",
             "[JumpBack]左上角返回",
             "[JumpBack]版本更新",
             "[JumpBack]左下角取消关卡",
@@ -358,8 +393,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 307,
-                "y": 449
+                "x": -110,
+                "y": 478
             }
         }
     },
@@ -384,8 +419,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1036,
-                "y": -395
+                "x": 1068,
+                "y": -633
             }
         }
     },
@@ -412,42 +447,42 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 911,
-                "y": 422
+                "x": 918,
+                "y": 319
             }
         }
     },
-    "等待游戏更新完成": {
-        "timeout": -1,
-        "next": [
-            "游戏更新完成"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1220,
-                "y": 412
-            }
-        }
-    },
-    "游戏更新完成": {
+    "关闭事件菜单": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    749,
-                    43,
-                    149,
-                    52
+                    942,
+                    39,
+                    179,
+                    74
                 ],
                 "expected": [
-                    "游戏公告"
+                    "事",
+                    "件"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    203,
+                    397,
+                    39,
+                    26
                 ]
             }
         },
         "$__mpe_code": {
             "position": {
-                "x": 1497,
-                "y": 401
+                "x": 982,
+                "y": 1255
             }
         }
     }
