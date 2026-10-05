@@ -3,24 +3,20 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1790755128256,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Langrisser\\assets\\resource\\pipeline\\羁绊.json",
             "savedViewport": {
-                "x": -804,
-                "y": 130,
+                "x": -777,
+                "y": 102,
                 "zoom": 0.66
             },
             "filename": "羁绊",
-            "version": "v2.0.4"
+            "version": "v2.0.6"
         }
     },
     "$__mpe_external_返回主界面开始_羁绊": {
         "$__mpe_code": {
             "position": {
-                "x": 2034,
-                "y": 906
+                "x": 2261,
+                "y": 1080
             },
             "extra_positions": [
                 {
@@ -47,8 +43,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 2907,
-                "y": -176
+                "x": 2898,
+                "y": -197
             }
         }
     },
@@ -127,8 +123,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2015,
-                "y": 271
+                "x": 1984,
+                "y": 169
             }
         }
     },
@@ -147,6 +143,7 @@
     "开始羁绊扫荡-羁绊": {
         "post_delay": 2000,
         "next": [
+            "体力不足无法扫荡-羁绊_判断",
             "[JumpBack]选择角色开始扫荡-羁绊",
             "剩余挑战次数为0-羁绊_第二次",
             "返回主界面开始"
@@ -412,8 +409,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2026,
-                "y": -241
+                "x": 1989,
+                "y": -220
             }
         }
     },
@@ -473,6 +470,31 @@
             "position": {
                 "x": 2810,
                 "y": 292
+            }
+        }
+    },
+    "体力不足无法扫荡-羁绊_判断": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    579,
+                    91,
+                    120,
+                    39
+                ],
+                "expected": [
+                    "体力"
+                ]
+            }
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1857,
+                "y": 470
             }
         }
     }
