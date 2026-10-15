@@ -103,6 +103,7 @@
                 ]
             }
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 2893,
@@ -205,6 +206,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 2398,
@@ -234,7 +236,7 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 1500,
+        "post_delay": 2000,
         "next": [
             "关闭扫荡结算界面-羁绊",
             "体力不足无法扫荡-羁绊",
@@ -271,6 +273,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 2967,
@@ -364,6 +367,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]选择扫荡图标-羁绊_第二次",
             "开始羁绊扫荡-羁绊"
@@ -394,6 +398,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 1585,
@@ -423,7 +428,7 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 1500,
+        "post_delay": 2000,
         "next": [
             "[JumpBack]未选择关卡处理-羁绊",
             "剩余挑战次数为0-羁绊",
@@ -459,6 +464,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 2392,
@@ -488,7 +494,7 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 1500,
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 2943,

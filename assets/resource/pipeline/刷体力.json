@@ -60,6 +60,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "开始检查是否进入关卡界面"
         ],
@@ -172,6 +173,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "开始检查是否进入关卡界面"
         ],
@@ -200,6 +202,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "开始检查是否进入关卡界面"
         ],
@@ -234,6 +237,7 @@
                 ]
             }
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 10511,
@@ -242,7 +246,7 @@
         }
     },
     "开始检查是否进入关卡界面": {
-        "post_delay": 1500,
+        "post_delay": 2000,
         "next": [
             "判断是否位于关卡界面",
             "开始选择打什么类型"
@@ -302,6 +306,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "开始检查是否进入关卡界面"
         ],
@@ -364,6 +369,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "选择扫荡开始-前三个类型",
             "[JumpBack]点击扫荡图标-前三个类型_第二次",
@@ -398,6 +404,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 10822,
@@ -423,7 +430,7 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 1500,
+        "post_delay": 2000,
         "next": [
             "[JumpBack]确认扫荡开始-前三个类型_第二次",
             "返回主界面开始"
@@ -453,6 +460,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 11472,
@@ -478,6 +486,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "开始检查是否进入关卡界面"
         ],
@@ -507,6 +516,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "选择日常活动界面",
             "[JumpBack]进入秘境界面_第二次"
@@ -537,6 +547,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 7797,
@@ -562,6 +573,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "逃跑的宝藏扫荡开始",
             "[JumpBack]逃跑的宝藏_第二次"
@@ -591,6 +603,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 9274,
@@ -616,6 +629,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "返回主界面开始"
         ],
@@ -718,6 +732,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "开始选择打什么类型"
         ],
@@ -748,6 +763,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "关卡内处理开始"
         ],

@@ -96,6 +96,7 @@
                 ]
             }
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 12952,
@@ -121,6 +122,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "选择友情召唤一次-友情池召唤",
             "[JumpBack]寻找友情卡池-友情池召唤_第二次"
@@ -147,7 +149,7 @@
                 ]
             }
         },
-        "post_delay": 1500,
+        "post_delay": 2000,
         "next": [
             "友情任务已完成-友情池召唤",
             "退出任务界面-友情池召唤"
@@ -177,6 +179,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "是否有友情卷-友情池召唤"
         ],
@@ -291,6 +294,7 @@
                 ]
             }
         },
+        "post_delay": 2000,
         "repeat": 4,
         "$__mpe_code": {
             "position": {
@@ -317,6 +321,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 13066,
@@ -342,6 +347,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "寻找友情召唤一次任务-友情池召唤",
             "[JumpBack]进入任务界面-友情池召唤_第二次",
@@ -373,6 +379,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 10157,
@@ -398,6 +405,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "开始进入卡池界面-友情池召唤",
             "[JumpBack]退出任务界面-友情池召唤_第二次"
@@ -435,6 +443,7 @@
                 ]
             }
         },
+        "post_delay": 2000,
         "next": [
             "召唤奖励已确定",
             "[JumpBack]确认召唤奖励-友情池召唤",
@@ -466,6 +475,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 12953,
@@ -491,6 +501,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 11105,
@@ -541,6 +552,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 11626,
@@ -566,6 +578,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 12409,

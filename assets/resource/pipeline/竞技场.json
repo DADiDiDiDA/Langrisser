@@ -44,6 +44,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]关闭结算窗口_第二次",
             "竞技场单次挑战结束"
@@ -86,6 +87,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "选择快速作战",
             "[JumpBack]开始竞技场挑战_第二次"
@@ -123,7 +125,7 @@
         }
     },
     "竞技场开始": {
-        "post_delay": 1500,
+        "post_delay": 2000,
         "next": [
             "进入竞技场界面",
             "[JumpBack]好像不位于主界面-竞技场"
@@ -181,6 +183,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "选择普通竞技场",
             "[JumpBack]进入竞技场界面_第二次"
@@ -211,6 +214,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 3491,
@@ -266,6 +270,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "准备开始竞技场挑战"
         ],
@@ -294,6 +299,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 4188,
@@ -345,6 +351,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 5667,
@@ -401,6 +408,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 4631,

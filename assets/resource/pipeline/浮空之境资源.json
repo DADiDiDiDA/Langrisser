@@ -51,6 +51,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]点击一键领取-浮空之境_第二次",
             "返回主界面开始"
@@ -153,6 +154,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 4658,

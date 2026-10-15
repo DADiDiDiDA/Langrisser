@@ -4,12 +4,12 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": 254,
-                "y": -425,
-                "zoom": 0.76
+                "x": 113,
+                "y": -1240,
+                "zoom": 0.57
             },
             "filename": "返回主界面",
-            "version": "v2.0.7"
+            "version": "v2.1.0"
         }
     },
     "主界面特征1": {
@@ -74,6 +74,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 1483,
@@ -101,7 +102,7 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 1500,
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 1074,
@@ -128,7 +129,7 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 1500,
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 1006,
@@ -180,6 +181,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 975,
@@ -218,24 +220,6 @@
             "position": {
                 "x": 945,
                 "y": 2391
-            }
-        }
-    },
-    "按Esc返回主界面": {
-        "max_hit": 10,
-        "action": {
-            "type": "ClickKey",
-            "param": {
-                "key": [
-                    4,
-                    111
-                ]
-            }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 949,
-                "y": 2717
             }
         }
     },
@@ -326,6 +310,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 1004,
@@ -351,6 +336,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 1380,
@@ -384,8 +370,7 @@
             "[JumpBack]关闭事件菜单",
             "[JumpBack]版本更新",
             "[JumpBack]左下角取消关卡",
-            "[JumpBack]战斗好像失败了_返回主界面",
-            "[JumpBack]按Esc返回主界面"
+            "[JumpBack]战斗好像失败了_返回主界面"
         ],
         "$__mpe_code": {
             "position": {
@@ -438,6 +423,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "等待游戏更新完成"
         ],
@@ -475,6 +461,7 @@
                 ]
             }
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 1003,

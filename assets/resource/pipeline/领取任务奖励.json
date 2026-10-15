@@ -44,6 +44,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "返回主界面开始"
         ],
@@ -100,6 +101,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "进入每日任务界面-领取任务奖励",
             "[JumpBack]进入任务界面-领取任务奖励第二次"
@@ -129,6 +131,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 11644,
