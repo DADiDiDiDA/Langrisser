@@ -3,17 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1791429494408,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Langrisser\\assets\\resource\\pipeline\\羁绊.json",
             "savedViewport": {
-                "x": -141,
-                "y": 189,
-                "zoom": 0.44
+                "x": -1008,
+                "y": 555,
+                "zoom": 0.71
             },
             "filename": "羁绊",
-            "version": "v2.0.7"
+            "version": "v2.1.0"
         }
     },
     "$__mpe_external_返回主界面开始_羁绊": {
@@ -186,6 +182,7 @@
         }
     },
     "未选择关卡处理-羁绊": {
+        "max_hit": 5,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -199,7 +196,7 @@
                     "羁绊之地扫荡关卡未选择图标.png"
                 ],
                 "threshold": [
-                    0.8
+                    0.85
                 ]
             }
         },

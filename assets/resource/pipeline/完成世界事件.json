@@ -3,10 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1792138594092,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Langrisser\\assets\\resource\\pipeline\\完成世界事件.json",
             "savedViewport": {
-                "x": -1985,
-                "y": -221,
-                "zoom": 0.44
+                "x": -1945,
+                "y": 211,
+                "zoom": 0.55
             },
             "filename": "完成世界事件",
             "version": "v2.1.0"
@@ -32,6 +36,114 @@
                     "y": 2151
                 }
             ]
+        }
+    },
+    "不用做沙拉": {
+        "next": [
+            "做一次沙拉结束-世界事件"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3831,
+                "y": 58
+            }
+        }
+    },
+    "任务界面滑动屏幕-世界事件": {
+        "max_hit": 5,
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    682,
+                    610,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        740,
+                        220,
+                        1,
+                        1
+                    ]
+                ],
+                "duration": [
+                    2000
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 2166,
+                "y": 480
+            }
+        }
+    },
+    "做一次沙拉结束-世界事件": {
+        "next": [
+            "进入世界事件选择界面",
+            "[JumpBack]返回一次主界面-做沙拉"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4318,
+                "y": -79
+            }
+        }
+    },
+    "先返回一次主界面-准备完成世界任务": {
+        "max_hit": 1,
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3455,
+                "y": 184
+            }
+        }
+    },
+    "准备开始世界事件任务-世界事件": {
+        "next": [
+            "[JumpBack]先返回一次主界面-准备完成世界任务",
+            "判断是否需要做一次沙拉-世界事件"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3030,
+                "y": 92
+            }
+        }
+    },
+    "判断是否位于任务界面-世界事件": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1112,
+                    149,
+                    144,
+                    414
+                ],
+                "expected": [
+                    "每日",
+                    "挑战",
+                    "成就"
+                ]
+            }
+        },
+        "next": [
+            "寻找世界事件任务",
+            "[JumpBack]任务界面滑动屏幕-世界事件",
+            "好像不位于主界面-完成世界事件"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1807,
+                "y": 274
+            }
         }
     },
     "判断是否打开世界事件界面": {
@@ -63,6 +175,73 @@
             }
         }
     },
+    "判断是否需要做一次沙拉-世界事件": {
+        "next": [
+            "需要做沙拉",
+            "不用做沙拉"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3419,
+                "y": -72
+            }
+        }
+    },
+    "发现世界任务已完成-世界事件": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": "寻找世界事件任务",
+                "roi_offset": [
+                    -4,
+                    -16,
+                    620,
+                    92
+                ],
+                "expected": [
+                    "已完成",
+                    "已领取",
+                    "1/1"
+                ]
+            }
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2670,
+                "y": 391
+            }
+        }
+    },
+    "发现世界任务未完成-世界事件": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": "寻找世界事件任务",
+                "roi_offset": [
+                    -4,
+                    -16,
+                    620,
+                    92
+                ],
+                "expected": [
+                    "前往",
+                    "0/1"
+                ]
+            }
+        },
+        "next": [
+            "准备开始世界事件任务-世界事件"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2703,
+                "y": 54
+            }
+        }
+    },
     "可用体力不足-扫荡完成世界事件": {
         "recognition": {
             "type": "OCR",
@@ -89,26 +268,80 @@
         }
     },
     "好像不位于主界面-完成世界事件": {
-        "max_hit": 2,
         "next": [
             "返回主界面开始"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3874,
-                "y": 940
+                "x": 1533,
+                "y": 735
             }
         }
     },
     "完成世界事件开始": {
         "next": [
-            "进入世界事件选择界面",
+            "进入任务界面-世界事件",
             "[JumpBack]好像不位于主界面-完成世界事件"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3426,
-                "y": 681
+                "x": 1079,
+                "y": 503
+            }
+        }
+    },
+    "寻找世界事件任务": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    242,
+                    58,
+                    218,
+                    658
+                ],
+                "expected": [
+                    "地图上的事件"
+                ]
+            }
+        },
+        "next": [
+            "发现世界任务未完成-世界事件",
+            "发现世界任务已完成-世界事件"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2234,
+                "y": 190
+            }
+        }
+    },
+    "开始制作扫荡沙拉-世界事件": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1041,
+                    631,
+                    162,
+                    76
+                ],
+                "expected": [
+                    "开始制作"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "做一次沙拉结束-世界事件"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6275,
+                "y": -948
             }
         }
     },
@@ -166,6 +399,236 @@
             "position": {
                 "x": 6589,
                 "y": -307
+            }
+        }
+    },
+    "开始进入沙拉制作界面-世界事件": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": "开始进入超动力轻食餐吧",
+                "roi_offset": [
+                    -1,
+                    -2,
+                    108,
+                    187
+                ],
+                "expected": [
+                    "沙拉"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "是扫荡沙拉吗-世界事件",
+            "[JumpBack]选择下一个沙拉制作-世界事件",
+            "[JumpBack]开始进入沙拉制作界面-世界事件_第二次",
+            "做一次沙拉结束-世界事件"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5464,
+                "y": -781
+            }
+        }
+    },
+    "开始进入沙拉制作界面-世界事件_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": "开始进入超动力轻食餐吧",
+                "roi_offset": [
+                    -1,
+                    -2,
+                    108,
+                    187
+                ],
+                "expected": [
+                    "沙拉"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 5646,
+                "y": -1244
+            }
+        }
+    },
+    "开始进入浮空之境-世界事件": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1153,
+                    490,
+                    124,
+                    39
+                ],
+                "expected": [
+                    "浮空"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "开始进入超动力轻食餐吧",
+            "[JumpBack]开始进入浮空之境-世界事件_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4613,
+                "y": -606
+            }
+        }
+    },
+    "开始进入浮空之境-世界事件_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1153,
+                    490,
+                    124,
+                    39
+                ],
+                "expected": [
+                    "浮空"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 4806,
+                "y": -914
+            }
+        }
+    },
+    "开始进入浮空城-世界事件": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    5,
+                    672,
+                    117,
+                    45
+                ],
+                "expected": [
+                    "浮空"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "开始进入浮空之境-世界事件",
+            "[JumpBack]开始进入浮空城-世界事件_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4205,
+                "y": -469
+            }
+        }
+    },
+    "开始进入浮空城-世界事件_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    5,
+                    672,
+                    117,
+                    45
+                ],
+                "expected": [
+                    "浮空"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 4458,
+                "y": -903
+            }
+        }
+    },
+    "开始进入超动力轻食餐吧": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    261,
+                    176,
+                    677,
+                    208
+                ],
+                "template": [
+                    "超动力轻食餐吧图标.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "开始进入沙拉制作界面-世界事件",
+            "[JumpBack]开始进入超动力轻食餐吧-世界事件_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5059,
+                "y": -758
+            }
+        }
+    },
+    "开始进入超动力轻食餐吧-世界事件_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    261,
+                    176,
+                    677,
+                    208
+                ],
+                "template": [
+                    "超动力轻食餐吧图标.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 5303,
+                "y": -1062
             }
         }
     },
@@ -291,6 +754,31 @@
             }
         }
     },
+    "是扫荡沙拉吗-世界事件": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    97,
+                    146,
+                    207,
+                    63
+                ],
+                "expected": [
+                    "扫荡"
+                ]
+            }
+        },
+        "next": [
+            "开始制作扫荡沙拉-世界事件"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5887,
+                "y": -1117
+            }
+        }
+    },
     "正常挑战世界事件": {
         "next": [
             "选择世界事件-寻找扫荡按钮",
@@ -300,6 +788,17 @@
             "position": {
                 "x": 5211,
                 "y": 174
+            }
+        }
+    },
+    "返回一次主界面-做沙拉": {
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3551,
+                "y": 502
             }
         }
     },
@@ -362,6 +861,90 @@
             "position": {
                 "x": 4714,
                 "y": 1123
+            }
+        }
+    },
+    "进入任务界面-世界事件": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    222,
+                    605,
+                    953,
+                    113
+                ],
+                "template": [
+                    "任务标志.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "判断是否位于任务界面-世界事件",
+            "[JumpBack]进入任务界面-世界事件_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1499,
+                "y": 252
+            }
+        }
+    },
+    "进入任务界面-世界事件_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    222,
+                    605,
+                    953,
+                    113
+                ],
+                "template": [
+                    "任务标志.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 1789,
+                "y": -40
+            }
+        }
+    },
+    "选择下一个沙拉制作-世界事件": {
+        "max_hit": 5,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    279,
+                    199,
+                    152,
+                    328
+                ],
+                "template": [
+                    "沙拉选择下一个图标.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 5876,
+                "y": -832
             }
         }
     },
@@ -508,8 +1091,8 @@
         "post_delay": 4000,
         "$__mpe_code": {
             "position": {
-                "x": 5955,
-                "y": -604
+                "x": 5753,
+                "y": -475
             }
         }
     },
@@ -582,6 +1165,17 @@
             "position": {
                 "x": 6171,
                 "y": 1628
+            }
+        }
+    },
+    "需要做沙拉": {
+        "next": [
+            "开始进入浮空城-世界事件"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3821,
+                "y": -300
             }
         }
     },
