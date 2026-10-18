@@ -1,0 +1,497 @@
+{
+    "$__mpe_config_刷四次时空彼端": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1792244725657,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Automate\\Git-Maawork\\Langrisser\\assets\\resource\\pipeline\\刷四次时空彼端.json",
+            "savedViewport": {
+                "x": -586,
+                "y": 277,
+                "zoom": 0.49
+            },
+            "filename": "刷四次时空彼端",
+            "version": "v2.1.0"
+        }
+    },
+    "$__mpe_external_返回主界面开始_刷四次时空彼端": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4938,
+                "y": -63
+            }
+        }
+    },
+    "判断是否为光之启程章节-刷四次时空彼端": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    65,
+                    515,
+                    337,
+                    78
+                ],
+                "expected": [
+                    "光之启程"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    607,
+                    326,
+                    39,
+                    24
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "next": [
+            "判断是否位于关卡内界面-刷四次时空彼端",
+            "[JumpBack]判断是否为光之启程章节-刷四次时空彼端_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1981,
+                "y": 3
+            }
+        }
+    },
+    "判断是否为光之启程章节-刷四次时空彼端_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    65,
+                    515,
+                    337,
+                    78
+                ],
+                "expected": [
+                    "光之启程"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    607,
+                    326,
+                    39,
+                    24
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 2252,
+                "y": -286
+            }
+        }
+    },
+    "判断是否位于关卡内界面-刷四次时空彼端": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    33,
+                    631,
+                    84,
+                    58
+                ],
+                "expected": [
+                    "已获得"
+                ]
+            }
+        },
+        "next": [
+            "选择1-1或者1-2关卡-刷四次时空彼端"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2337,
+                "y": -25
+            }
+        }
+    },
+    "刷四次时空彼端开始": {
+        "next": [
+            "进入时空彼端界面-刷四次时空彼端"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 204,
+                "y": 264
+            }
+        }
+    },
+    "开始准备三次扫荡-刷四次时空彼端": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    688,
+                    575,
+                    120,
+                    74
+                ],
+                "expected": [
+                    "再次扫荡"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "开始准备四次扫荡-刷四次时空彼端"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4243,
+                "y": -114
+            }
+        }
+    },
+    "开始准备二次扫荡-刷四次时空彼端": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    688,
+                    575,
+                    120,
+                    74
+                ],
+                "expected": [
+                    "再次扫荡"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "开始准备三次扫荡-刷四次时空彼端"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3831,
+                "y": -88
+            }
+        }
+    },
+    "开始准备四次扫荡-刷四次时空彼端": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    688,
+                    575,
+                    120,
+                    74
+                ],
+                "expected": [
+                    "再次扫荡"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4577,
+                "y": -100
+            }
+        }
+    },
+    "滑动时空裂缝关卡选择-刷四次时空彼端": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    311,
+                    486,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        1010,
+                        494,
+                        0,
+                        2
+                    ]
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 1907,
+                "y": 325
+            }
+        }
+    },
+    "点击扫荡-刷四次时空彼端": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    719,
+                    457,
+                    95,
+                    63
+                ],
+                "expected": [
+                    "扫荡"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "开始准备二次扫荡-刷四次时空彼端",
+            "[JumpBack]点击扫荡-刷四次时空彼端_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3382,
+                "y": -84
+            }
+        }
+    },
+    "点击扫荡-刷四次时空彼端_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    719,
+                    457,
+                    95,
+                    63
+                ],
+                "expected": [
+                    "扫荡"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 3649,
+                "y": -303
+            }
+        }
+    },
+    "进入时空彼端界面-刷四次时空彼端": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1172,
+                    75,
+                    107,
+                    511
+                ],
+                "template": [
+                    "时空彼端图标.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "进入时空裂缝界面-刷四次时空彼端",
+            "[JumpBack]进入时空彼端界面-刷四次时空彼端_副本1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1002,
+                "y": 108
+            }
+        }
+    },
+    "进入时空彼端界面-刷四次时空彼端_副本1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1172,
+                    75,
+                    107,
+                    511
+                ],
+                "template": [
+                    "时空彼端图标.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 1321,
+                "y": -202
+            }
+        }
+    },
+    "进入时空裂缝界面-刷四次时空彼端": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    146,
+                    498,
+                    215,
+                    96
+                ],
+                "expected": [
+                    "时空裂缝",
+                    "TIME"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "[JumpBack]进入时空裂缝界面-刷四次时空彼端_第二次",
+            "判断是否为光之启程章节-刷四次时空彼端",
+            "[JumpBack]滑动时空裂缝关卡选择-刷四次时空彼端"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1446,
+                "y": 108
+            }
+        }
+    },
+    "进入时空裂缝界面-刷四次时空彼端_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    146,
+                    498,
+                    215,
+                    96
+                ],
+                "expected": [
+                    "时空裂缝",
+                    "TIME"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 1774,
+                "y": -236
+            }
+        }
+    },
+    "选择1-1或者1-2关卡-刷四次时空彼端": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    21,
+                    388,
+                    424,
+                    59
+                ],
+                "template": [
+                    "关卡奖杯图标.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    54,
+                    -57,
+                    -36,
+                    -29
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "next": [
+            "点击扫荡-刷四次时空彼端",
+            "[JumpBack]选择1-1或者1-2关卡-刷四次时空彼端_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2909,
+                "y": -132
+            }
+        }
+    },
+    "选择1-1或者1-2关卡-刷四次时空彼端_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    21,
+                    388,
+                    424,
+                    59
+                ],
+                "template": [
+                    "关卡奖杯图标.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    54,
+                    -57,
+                    -36,
+                    -29
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 3247,
+                "y": -441
+            }
+        }
+    }
+}
