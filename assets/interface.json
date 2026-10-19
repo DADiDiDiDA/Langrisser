@@ -88,12 +88,6 @@
             "doc": "刷安杰丽卡特训屋体力，支持扫荡和连续作战"
         },
         {
-            "name": "领取任务奖励（第一次）",
-            "entry": "领取任务奖励开始",
-            "default_check": true,
-            "doc": "自动领取每日任务的奖励"
-        },
-        {
             "name": "刷体力-羁绊之地",
             "entry": "刷体力开始",
             "default_check": true,
@@ -101,9 +95,15 @@
             "doc": "刷羁绊之地体力，支持扫荡和连续作战"
         },
         {
+            "name": "领取任务奖励（第一次）",
+            "entry": "领取任务奖励开始",
+            "default_check": true,
+            "doc": "自动领取每日任务的奖励"
+        },
+        {
             "name": "刷体力-律定之途",
             "entry": "刷体力开始",
-            "default_check": true,
+            "default_check": false,
             "option": ["刷体力-律定之途"],
             "doc": "刷律定之途体力，支持扫荡和连续作战"
         },
