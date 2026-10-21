@@ -46,7 +46,7 @@
         },
         "post_delay": 2000,
         "next": [
-            "[JumpBack]关闭结算窗口_第二次",
+            "[JumpBack]关闭结算窗口-第二次",
             "竞技场单次挑战结束"
         ],
         "$__mpe_code": {
@@ -60,7 +60,7 @@
         "next": [
             "检查剩余竞技场次数",
             "[JumpBack]开始竞技场挑战",
-            "[JumpBack]选择普通竞技场_第二次"
+            "[JumpBack]选择普通竞技场-第二次"
         ],
         "$__mpe_code": {
             "position": {
@@ -90,7 +90,7 @@
         "post_delay": 2000,
         "next": [
             "选择快速作战",
-            "[JumpBack]开始竞技场挑战_第二次"
+            "[JumpBack]开始竞技场挑战-第二次"
         ],
         "$__mpe_code": {
             "position": {
@@ -155,7 +155,7 @@
         "post_delay": 3000,
         "next": [
             "关闭结算窗口",
-            "[JumpBack]等待结算_第二次"
+            "[JumpBack]等待结算-第二次"
         ],
         "$__mpe_code": {
             "position": {
@@ -186,7 +186,7 @@
         "post_delay": 2000,
         "next": [
             "选择普通竞技场",
-            "[JumpBack]进入竞技场界面_第二次"
+            "[JumpBack]进入竞技场界面-第二次"
         ],
         "$__mpe_code": {
             "position": {
@@ -195,7 +195,7 @@
             }
         }
     },
-    "进入竞技场界面_第二次": {
+    "进入竞技场界面-第二次": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -243,7 +243,7 @@
         "post_delay": 3000,
         "next": [
             "等待结算",
-            "[JumpBack]选择快速作战_第二次"
+            "[JumpBack]选择快速作战-第二次"
         ],
         "$__mpe_code": {
             "position": {
@@ -281,7 +281,7 @@
             }
         }
     },
-    "选择普通竞技场_第二次": {
+    "选择普通竞技场-第二次": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -307,7 +307,7 @@
             }
         }
     },
-    "选择快速作战_第二次": {
+    "选择快速作战-第二次": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -333,7 +333,7 @@
             }
         }
     },
-    "关闭结算窗口_第二次": {
+    "关闭结算窗口-第二次": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -359,7 +359,7 @@
             }
         }
     },
-    "等待结算_第二次": {
+    "等待结算-第二次": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -390,7 +390,7 @@
             }
         }
     },
-    "开始竞技场挑战_第二次": {
+    "开始竞技场挑战-第二次": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
