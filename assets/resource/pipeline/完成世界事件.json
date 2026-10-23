@@ -3,14 +3,10 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1792138594092,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Langrisser\\assets\\resource\\pipeline\\完成世界事件.json",
             "savedViewport": {
-                "x": -1945,
-                "y": 211,
-                "zoom": 0.55
+                "x": -1952,
+                "y": 28,
+                "zoom": 0.51
             },
             "filename": "完成世界事件",
             "version": "v2.1.0"
@@ -165,7 +161,6 @@
         },
         "post_delay": 2000,
         "next": [
-            "返回主界面开始",
             "选择世界事件完成方式"
         ],
         "$__mpe_code": {
@@ -724,8 +719,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4672,
-                "y": 839
+                "x": 4770,
+                "y": 815
             }
         }
     },
