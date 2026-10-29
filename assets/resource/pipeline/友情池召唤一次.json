@@ -4,12 +4,12 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -7638,
-                "y": -606,
-                "zoom": 0.66
+                "x": -7045,
+                "y": -562,
+                "zoom": 0.61
             },
             "filename": "友情池召唤一次",
-            "version": "v2.0.4"
+            "version": "v2.1.0"
         }
     },
     "$__mpe_external_返回主界面开始_友情池召唤一次": {
@@ -76,7 +76,6 @@
         }
     },
     "向下滑动表-友情池召唤": {
-        "max_hit": 20,
         "action": {
             "type": "Swipe",
             "param": {
@@ -99,8 +98,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 12952,
-                "y": 1429
+                "x": 13020,
+                "y": 1996
             }
         }
     },
@@ -294,8 +293,8 @@
                 ]
             }
         },
-        "post_delay": 2000,
         "repeat": 4,
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 12154,
@@ -448,12 +447,13 @@
             "召唤奖励已确定",
             "[JumpBack]确认召唤奖励-友情池召唤",
             "[JumpBack]选择跳过召唤介绍-友情池召唤",
+            "[JumpBack]选择友情召唤一次-友情池召唤_第二次",
             "[JumpBack]向下滑动表-友情池召唤"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 12516,
-                "y": 989
+                "x": 12623,
+                "y": 1002
             }
         }
     },
@@ -478,8 +478,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 12953,
-                "y": 1209
+                "x": 13134,
+                "y": 1335
             }
         }
     },
@@ -525,7 +525,7 @@
             }
         },
         "next": [
-            "返回主界面开始"
+            "友情池召唤一次开始"
         ],
         "$__mpe_code": {
             "position": {
@@ -581,13 +581,12 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 12409,
-                "y": 1283
+                "x": 12420,
+                "y": 1320
             }
         }
     },
     "好像不位于主界面-友情池召唤": {
-        "max_hit": 2,
         "next": [
             "返回主界面开始"
         ],
@@ -595,6 +594,40 @@
             "position": {
                 "x": 9460,
                 "y": 1496
+            }
+        }
+    },
+    "选择友情召唤一次-友情池召唤_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    335,
+                    659,
+                    131,
+                    52
+                ],
+                "expected": [
+                    "友情券"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    -57,
+                    0,
+                    0
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 13064,
+                "y": 1609
             }
         }
     }
