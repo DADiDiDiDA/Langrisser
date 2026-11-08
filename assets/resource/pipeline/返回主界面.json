@@ -3,13 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1794105582257,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Automate\\Git-Maawork\\Langrisser\\assets\\resource\\pipeline\\返回主界面.json",
             "savedViewport": {
-                "x": 113,
-                "y": -1240,
-                "zoom": 0.57
+                "x": 0,
+                "y": -671,
+                "zoom": 0.53
             },
             "filename": "返回主界面",
-            "version": "v2.1.0"
+            "version": "v2.1.1"
         }
     },
     "主界面特征1": {
@@ -53,6 +57,41 @@
             "position": {
                 "x": 1391,
                 "y": -1025
+            }
+        }
+    },
+    "关闭事件菜单": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    942,
+                    39,
+                    179,
+                    74
+                ],
+                "expected": [
+                    "事",
+                    "件"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    203,
+                    397,
+                    39,
+                    26
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 1003,
+                "y": 1498
             }
         }
     },
@@ -132,8 +171,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 1006,
-                "y": 556
+                "x": 1015,
+                "y": 636
             }
         }
     },
@@ -158,8 +197,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 943,
-                "y": 1078
+                "x": 1000,
+                "y": 1187
             }
         }
     },
@@ -184,8 +223,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 975,
-                "y": 2127
+                "x": 998,
+                "y": 2182
             }
         }
     },
@@ -218,8 +257,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 945,
-                "y": 2391
+                "x": 971,
+                "y": 2509
             }
         }
     },
@@ -261,8 +300,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1596,
-                "y": 283
+                "x": 1625,
+                "y": 378
             }
         }
     },
@@ -287,8 +326,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 1007,
-                "y": 810
+                "x": 1010,
+                "y": 913
             }
         }
     },
@@ -339,8 +378,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 1380,
-                "y": 2441
+                "x": 1363,
+                "y": 2527
             }
         }
     },
@@ -431,41 +470,6 @@
             "position": {
                 "x": 918,
                 "y": 319
-            }
-        }
-    },
-    "关闭事件菜单": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    942,
-                    39,
-                    179,
-                    74
-                ],
-                "expected": [
-                    "事",
-                    "件"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    203,
-                    397,
-                    39,
-                    26
-                ]
-            }
-        },
-        "post_delay": 2000,
-        "$__mpe_code": {
-            "position": {
-                "x": 1003,
-                "y": 1498
             }
         }
     }
