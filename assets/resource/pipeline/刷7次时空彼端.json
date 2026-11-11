@@ -1,22 +1,22 @@
 {
-    "$__mpe_config_刷四次时空彼端": {
+    "$__mpe_config_刷7次时空彼端": {
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1794293586557,
+            "lastSyncTime": 1794354793215,
             "isModifiedExternally": false,
             "isDeleted": false,
-            "filePath": "D:\\Automate\\Git-Maawork\\Langrisser\\assets\\resource\\pipeline\\刷四次时空彼端.json",
+            "filePath": "D:\\Automate\\Git-Maawork\\Langrisser\\assets\\resource\\pipeline\\刷7次时空彼端.json",
             "savedViewport": {
-                "x": -1844,
-                "y": 369,
-                "zoom": 0.69
+                "x": -623,
+                "y": 94,
+                "zoom": 0.34
             },
-            "filename": "刷四次时空彼端",
+            "filename": "刷7次时空彼端",
             "version": "v2.1.1"
         }
     },
-    "$__mpe_external_返回主界面开始_刷四次时空彼端": {
+    "$__mpe_external_返回主界面开始_刷7次时空彼端": {
         "$__mpe_code": {
             "position": {
                 "x": 5072,
@@ -268,7 +268,8 @@
         "post_delay": 2000,
         "next": [
             "[JumpBack]开始准备三次扫荡-刷四次时空彼端",
-            "体力不足任务结束-刷四次时空彼端"
+            "体力不足任务结束-刷四次时空彼端",
+            "返回主界面开始"
         ],
         "$__mpe_code": {
             "position": {
