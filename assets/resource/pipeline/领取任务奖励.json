@@ -134,6 +134,7 @@
         }
     },
     "进入任务界面-领取任务奖励第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -191,6 +192,7 @@
         }
     },
     "进入每日任务界面-领取任务奖励-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -229,6 +231,7 @@
         }
     },
     "一键领取奖励-领取任务奖励_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {

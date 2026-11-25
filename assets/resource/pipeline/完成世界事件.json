@@ -372,6 +372,7 @@
         }
     },
     "开始进入世界事件关卡-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -431,6 +432,7 @@
         }
     },
     "开始进入沙拉制作界面-世界事件-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -488,6 +490,7 @@
         }
     },
     "开始进入浮空之境-世界事件-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -544,6 +547,7 @@
         }
     },
     "开始进入浮空城-世界事件-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -601,6 +605,7 @@
         }
     },
     "开始进入超动力轻食餐吧-世界事件-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -890,6 +895,7 @@
         }
     },
     "进入任务界面-世界事件-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -983,6 +989,7 @@
         }
     },
     "选择世界事件-寻找10体力按钮-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -1057,6 +1064,7 @@
         }
     },
     "选择世界事件-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {

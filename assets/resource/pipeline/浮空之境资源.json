@@ -163,6 +163,7 @@
         }
     },
     "进入浮空之境界面-浮空之境-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {

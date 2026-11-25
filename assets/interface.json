@@ -35,7 +35,7 @@
     "task": [
         {
             "name": "开始游戏",
-            "entry": "返回主界面开始",
+            "entry": "启动游戏开始",
             "default_check": true,
             "doc": "进入游戏",
             "label": "开始游戏"

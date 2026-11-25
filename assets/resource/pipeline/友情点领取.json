@@ -130,6 +130,7 @@
         }
     },
     "进入好友界面-友情点领取-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -187,6 +188,7 @@
         }
     },
     "进入好友类别-友情点领取-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {

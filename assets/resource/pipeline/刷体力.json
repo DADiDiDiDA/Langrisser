@@ -443,6 +443,7 @@
         }
     },
     "确认扫荡开始-前三个类型-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -529,6 +530,7 @@
         }
     },
     "进入秘境界面-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -586,6 +588,7 @@
         }
     },
     "逃跑的宝藏-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -672,6 +675,7 @@
         }
     },
     "选择扫荡开始-前三个类型-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {

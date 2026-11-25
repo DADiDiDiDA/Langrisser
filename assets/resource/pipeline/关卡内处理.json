@@ -87,6 +87,7 @@
         }
     },
     "开启单次自动作战-关卡内-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -143,6 +144,7 @@
         }
     },
     "开启连续作战-关卡内-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -200,6 +202,7 @@
         }
     },
     "开始出击-关卡内-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -367,6 +370,7 @@
         }
     },
     "确认连续作战-关卡内-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -461,6 +465,7 @@
         }
     },
     "连续作战结束特别判断第二次-关卡内": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -505,6 +510,7 @@
         }
     },
     "选择最靠下的关卡-第二次-关卡内处理": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -533,6 +539,7 @@
         }
     },
     "确认战斗失败-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {

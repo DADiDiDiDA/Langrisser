@@ -196,6 +196,7 @@
         }
     },
     "进入竞技场界面-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -282,6 +283,7 @@
         }
     },
     "选择普通竞技场-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -308,6 +310,7 @@
         }
     },
     "选择快速作战-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -334,6 +337,7 @@
         }
     },
     "关闭结算窗口-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -360,6 +364,7 @@
         }
     },
     "等待结算-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -391,6 +396,7 @@
         }
     },
     "开始竞技场挑战-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {

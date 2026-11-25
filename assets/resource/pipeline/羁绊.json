@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1794356499563,
+            "lastSyncTime": 1795573726494,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "D:\\Automate\\Git-Maawork\\Langrisser\\assets\\resource\\pipeline\\羁绊.json",
             "savedViewport": {
-                "x": -663,
-                "y": 57,
-                "zoom": 0.59
+                "x": -141,
+                "y": 169,
+                "zoom": 0.43
             },
             "filename": "羁绊",
             "version": "v2.1.1"
@@ -19,8 +19,8 @@
     "$__mpe_external_返回主界面开始_羁绊": {
         "$__mpe_code": {
             "position": {
-                "x": 2261,
-                "y": 1080
+                "x": 2254,
+                "y": 1120
             },
             "extra_positions": [
                 {
@@ -160,6 +160,7 @@
         }
     },
     "剩余挑战次数为0-羁绊-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -304,6 +305,7 @@
         }
     },
     "点击扫荡图标-羁绊-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -376,6 +378,7 @@
         }
     },
     "进入羁绊界面-羁绊-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -432,6 +435,7 @@
         }
     },
     "选择扫荡图标-羁绊_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -473,7 +477,8 @@
                 "green_mask": true,
                 "threshold": [
                     0.7
-                ]
+                ],
+                "order_by": "Score"
             }
         },
         "action": {
@@ -484,7 +489,9 @@
             "[JumpBack]未选择关卡处理-羁绊",
             "剩余挑战次数为0-羁绊",
             "点击扫荡图标-羁绊",
-            "[JumpBack]选择角色开始扫荡-羁绊-第二次"
+            "[JumpBack]选择角色开始扫荡-羁绊-第二次",
+            "疑似已扫荡无法扫荡",
+            "返回主界面开始"
         ],
         "$__mpe_code": {
             "position": {
@@ -494,6 +501,7 @@
         }
     },
     "选择角色开始扫荡-羁绊-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -509,7 +517,8 @@
                 "green_mask": true,
                 "threshold": [
                     0.7
-                ]
+                ],
+                "order_by": "Score"
             }
         },
         "action": {
@@ -524,6 +533,7 @@
         }
     },
     "选择角色开始扫荡-羁绊-错误处理": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -548,8 +558,59 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 2943,
-                "y": 475
+                "x": 2931,
+                "y": 524
+            }
+        }
+    },
+    "疑似已扫荡无法扫荡": {
+        "max_hit": 10,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    915,
+                    620,
+                    178,
+                    84
+                ],
+                "template": [
+                    "无扫荡次数图标.png"
+                ]
+            }
+        },
+        "next": [
+            "尝试返回上一级-羁绊"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2309,
+                "y": 766
+            }
+        }
+    },
+    "尝试返回上一级-羁绊": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    636,
+                    268,
+                    82,
+                    78
+                ],
+                "expected": [
+                    "碎片"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2624,
+                "y": 853
             }
         }
     }

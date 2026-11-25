@@ -361,6 +361,7 @@
         }
     },
     "进入任务界面-友情池召唤-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -484,6 +485,7 @@
         }
     },
     "退出任务界面-友情池召唤-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -535,6 +537,7 @@
         }
     },
     "开始进入卡池界面-友情池召唤-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -561,6 +564,7 @@
         }
     },
     "寻找友情卡池-友情池召唤-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -598,6 +602,7 @@
         }
     },
     "选择友情召唤一次-友情池召唤_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
