@@ -170,6 +170,13 @@
             "default_check": true,
             "doc": "自动领取每日任务的奖励",
             "label": "领取任务奖励（第二次）"
+        },
+        {
+            "name": "旅团合战",
+            "entry": "旅团合战开始",
+            "default_check": true,
+            "doc": "自动领取并扫荡旅团合战；必须要可以扫荡欧~",
+            "label": "旅团合战"
         }
     ],
     "option": {

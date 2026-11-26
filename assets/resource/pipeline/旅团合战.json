@@ -1,0 +1,1014 @@
+{
+    "$__mpe_config_旅团合战": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1795651810669,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Automate\\Git-Maawork\\Langrisser\\assets\\resource\\pipeline\\旅团合战.json",
+            "savedViewport": {
+                "x": -6319,
+                "y": 1007,
+                "zoom": 0.65
+            },
+            "filename": "旅团合战",
+            "version": "v2.1.1"
+        }
+    },
+    "$__mpe_external_返回主界面开始_旅团合战": {
+        "$__mpe_code": {
+            "position": {
+                "x": 12550,
+                "y": -63
+            }
+        }
+    },
+    "一键上阵角色-旅团合战": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    600,
+                    489,
+                    320,
+                    160
+                ],
+                "expected": [
+                    "键上阵"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1000,
+        "next": [
+            "开始一键扫荡-旅团合战",
+            "可上阵英雄不足-任务结束-旅团合战",
+            "[JumpBack]一键上阵角色-旅团合战_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11360,
+                "y": -1510
+            }
+        }
+    },
+    "一键上阵角色-旅团合战_第二次": {
+        "max_hit": 25,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    600,
+                    489,
+                    320,
+                    160
+                ],
+                "expected": [
+                    "键上阵"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 11740,
+                "y": -1256
+            }
+        }
+    },
+    "关闭据点界面-旅团合战": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1027,
+                    76,
+                    154,
+                    159
+                ],
+                "template": [
+                    "旅团活动关闭图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "[JumpBack]关闭据点界面-旅团合战_第二次",
+            "关闭据点界面结束-旅团合战"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 13053,
+                "y": -1505
+            }
+        }
+    },
+    "单人扫荡开始-旅团合战": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    771,
+                    505,
+                    320,
+                    160
+                ],
+                "expected": [
+                    "单人扫荡"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1000,
+        "next": [
+            "是否位于可上阵英雄界面-旅团合战",
+            "无可用角色-旅团合战",
+            "[JumpBack]单人扫荡开始-旅团合战_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10607,
+                "y": -1306
+            }
+        }
+    },
+    "单人扫荡开始-旅团合战_第二次": {
+        "max_hit": 25,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    771,
+                    505,
+                    320,
+                    160
+                ],
+                "expected": [
+                    "单人扫荡"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 11000,
+                "y": -838
+            }
+        }
+    },
+    "单人扫荡是否执行-旅团合战": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    437,
+                    255,
+                    320,
+                    160
+                ],
+                "expected": [
+                    "要进行单人扫"
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "next": [
+            "确认单人扫荡-旅团合战"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12124,
+                "y": -1849
+            }
+        }
+    },
+    "可上阵英雄不足-任务结束-旅团合战": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    521,
+                    329,
+                    233,
+                    62
+                ],
+                "expected": [
+                    "上阵英雄不足"
+                ]
+            }
+        },
+        "next": [
+            "旅团合战任务结束-旅团合战"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11756,
+                "y": -1506
+            }
+        }
+    },
+    "可以挑战压制完成据点-旅团合战": {
+        "next": [
+            "是否位于据点界面-旅团合战"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9559,
+                "y": -820
+            }
+        }
+    },
+    "团合战已开启-旅团合战": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": "尝试进入团合战界面-旅团合战",
+                "roi_offset": [
+                    412,
+                    -68,
+                    -103,
+                    18
+                ],
+                "expected": [
+                    "已开启"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "尝试进入扫荡目标-旅团合战"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8575,
+                "y": -1273
+            }
+        }
+    },
+    "团合战未开启-旅团合战": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": "尝试进入团合战界面-旅团合战",
+                "roi_offset": [
+                    412,
+                    -68,
+                    -103,
+                    18
+                ],
+                "expected": [
+                    "未开启"
+                ]
+            }
+        },
+        "next": [
+            "旅团合战任务结束-旅团合战"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8527,
+                "y": -700
+            }
+        }
+    },
+    "尝试寻找战斗界面-压制完成-旅团合战": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    247,
+                    240,
+                    921,
+                    374
+                ],
+                "expected": [
+                    "压制完成"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 100,
+        "next": [
+            "据点已被压制-旅团合战",
+            "可以挑战压制完成据点-旅团合战"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9218,
+                "y": -1024
+            }
+        }
+    },
+    "尝试寻找战斗界面-压制度-旅团合战": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    247,
+                    240,
+                    921,
+                    374
+                ],
+                "expected": [
+                    "压制度"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "是否位于据点界面-旅团合战",
+            "[JumpBack]尝试寻找战斗界面-压制度-旅团合战_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9885,
+                "y": -1336
+            }
+        }
+    },
+    "尝试寻找战斗界面-压制度-旅团合战_第二次": {
+        "max_hit": 25,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    247,
+                    240,
+                    921,
+                    374
+                ],
+                "expected": [
+                    "压制度"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 10171,
+                "y": -1035
+            }
+        }
+    },
+    "尝试进入团合战界面-旅团合战": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    334,
+                    65,
+                    387,
+                    163
+                ],
+                "expected": [
+                    "团合战"
+                ]
+            }
+        },
+        "next": [
+            "团合战已开启-旅团合战",
+            "团合战未开启-旅团合战"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8157,
+                "y": -1276
+            }
+        }
+    },
+    "尝试进入扫荡目标-旅团合战": {
+        "next": [
+            "尝试寻找战斗界面-压制度-旅团合战",
+            "尝试寻找战斗界面-压制完成-旅团合战",
+            "已位于主界面-旅团合战"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8896,
+                "y": -1213
+            }
+        }
+    },
+    "尝试进入旅团活动界面-旅团合战": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    919,
+                    605,
+                    252,
+                    105
+                ],
+                "template": [
+                    "旅团活动图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "是否位于旅团活动界面-旅团合战",
+            "[JumpBack]尝试进入旅团活动界面-旅团合战_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7428,
+                "y": -1285
+            }
+        }
+    },
+    "尝试进入旅团活动界面-旅团合战_第二次": {
+        "max_hit": 25,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    919,
+                    605,
+                    252,
+                    105
+                ],
+                "template": [
+                    "旅团活动图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 7780,
+                "y": -944
+            }
+        }
+    },
+    "开始一键扫荡-旅团合战": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    791,
+                    485,
+                    320,
+                    160
+                ],
+                "template": [
+                    "橙色扫荡图标.png"
+                ],
+                "threshold": [
+                    0.8
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "单人扫荡是否执行-旅团合战",
+            "[JumpBack]开始一键扫荡-旅团合战_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11776,
+                "y": -1913
+            }
+        }
+    },
+    "开始一键扫荡-旅团合战_第二次": {
+        "max_hit": 25,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    791,
+                    485,
+                    320,
+                    160
+                ],
+                "template": [
+                    "橙色扫荡图标.png"
+                ],
+                "threshold": [
+                    0.8
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 12090,
+                "y": -2272
+            }
+        }
+    },
+    "扫荡已确认-旅团合战": {
+        "$__mpe_code": {
+            "position": {
+                "x": 13309,
+                "y": -1798
+            }
+        }
+    },
+    "据点已被压制-旅团合战": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    517,
+                    329,
+                    246,
+                    59
+                ],
+                "expected": [
+                    "该据点已被压制"
+                ]
+            }
+        },
+        "next": [
+            "尝试寻找战斗界面-压制度-旅团合战",
+            "旅团合战任务结束-旅团合战"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9563,
+                "y": -1138
+            }
+        }
+    },
+    "旅团合战任务结束-旅团合战": {
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12106,
+                "y": -100
+            }
+        }
+    },
+    "旅团合战开始": {
+        "next": [
+            "进入旅团界面-旅团合战"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6315,
+                "y": -1210
+            }
+        }
+    },
+    "无可用角色-旅团合战": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    434,
+                    327,
+                    412,
+                    68
+                ],
+                "expected": [
+                    "没有足够可上阵英雄"
+                ]
+            }
+        },
+        "next": [
+            "旅团合战任务结束-旅团合战"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10999,
+                "y": -1062
+            }
+        }
+    },
+    "是否位于可上阵英雄界面-旅团合战": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    310,
+                    119,
+                    252,
+                    44
+                ],
+                "expected": [
+                    "剩余可上阵英雄"
+                ]
+            }
+        },
+        "next": [
+            "[JumpBack]一键上阵角色-旅团合战",
+            "尝试进入新据点"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10997,
+                "y": -1332
+            }
+        }
+    },
+    "是否位于据点界面-旅团合战": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    572,
+                    50,
+                    138,
+                    46
+                ],
+                "expected": [
+                    "据点详情"
+                ]
+            }
+        },
+        "next": [
+            "单人扫荡开始-旅团合战",
+            "未发现扫荡按钮-旅团合战"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10267,
+                "y": -1297
+            }
+        }
+    },
+    "是否位于旅团活动界面-旅团合战": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    540,
+                    15,
+                    192,
+                    48
+                ],
+                "expected": [
+                    "旅团活动"
+                ]
+            }
+        },
+        "next": [
+            "尝试进入团合战界面-旅团合战"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7820,
+                "y": -1295
+            }
+        }
+    },
+    "是否位于旅团界面-旅团合战": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    65,
+                    278,
+                    111,
+                    87
+                ],
+                "expected": [
+                    "旅团"
+                ]
+            }
+        },
+        "next": [
+            "尝试进入旅团活动界面-旅团合战"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7063,
+                "y": -1265
+            }
+        }
+    },
+    "未发现扫荡按钮-旅团合战": {
+        "next": [
+            "旅团合战任务结束-旅团合战"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10651,
+                "y": -716
+            }
+        }
+    },
+    "确认单人扫荡-旅团合战": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    579,
+                    378,
+                    320,
+                    160
+                ],
+                "expected": [
+                    "确认"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 100,
+        "next": [
+            "确认积分结算-旅团合战",
+            "[JumpBack]确认单人扫荡-旅团合战_第二次",
+            "据点完成压制更换据点"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12442,
+                "y": -1845
+            }
+        }
+    },
+    "确认单人扫荡-旅团合战_第二次": {
+        "max_hit": 25,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    579,
+                    378,
+                    320,
+                    160
+                ],
+                "expected": [
+                    "确认"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 12799,
+                "y": -2221
+            }
+        }
+    },
+    "确认积分结算-旅团合战": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    508,
+                    33,
+                    320,
+                    160
+                ],
+                "expected": [
+                    "积分结算"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    74,
+                    -59,
+                    -139,
+                    -37
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "next": [
+            "[JumpBack]确认积分结算-旅团合战_第二次",
+            "扫荡已确认-旅团合战"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12802,
+                "y": -1868
+            }
+        }
+    },
+    "确认积分结算-旅团合战_第二次": {
+        "max_hit": 25,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    508,
+                    33,
+                    320,
+                    160
+                ],
+                "expected": [
+                    "积分结算"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    74,
+                    -59,
+                    -139,
+                    -37
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 13262,
+                "y": -2214
+            }
+        }
+    },
+    "进入旅团界面-旅团合战": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    822,
+                    560,
+                    320,
+                    160
+                ],
+                "template": [
+                    "旅团图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "是否位于旅团界面-旅团合战",
+            "[JumpBack]进入旅团界面-旅团合战_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6655,
+                "y": -1226
+            }
+        }
+    },
+    "进入旅团界面-旅团合战_第二次": {
+        "max_hit": 25,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    822,
+                    560,
+                    320,
+                    160
+                ],
+                "template": [
+                    "旅团图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 7003,
+                "y": -963
+            }
+        }
+    },
+    "据点完成压制更换据点": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    420,
+                    324,
+                    444,
+                    73
+                ],
+                "expected": [
+                    "完成压制"
+                ]
+            }
+        },
+        "next": [
+            "关闭据点界面-旅团合战"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12691,
+                "y": -1493
+            }
+        }
+    },
+    "关闭据点界面结束-旅团合战": {
+        "$__mpe_code": {
+            "position": {
+                "x": 13551,
+                "y": -1273
+            }
+        }
+    },
+    "关闭据点界面-旅团合战_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1027,
+                    76,
+                    154,
+                    159
+                ],
+                "template": [
+                    "旅团活动关闭图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 13539,
+                "y": -1650
+            }
+        }
+    },
+    "尝试进入新据点": {
+        "next": [
+            "尝试进入扫荡目标-旅团合战"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10899,
+                "y": -1607
+            }
+        }
+    },
+    "已位于主界面-旅团合战": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    19,
+                    671,
+                    90,
+                    41
+                ],
+                "expected": [
+                    "浮空城"
+                ]
+            }
+        },
+        "next": [
+            "旅团合战任务结束-旅团合战"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9136,
+                "y": -699
+            }
+        }
+    }
+}
